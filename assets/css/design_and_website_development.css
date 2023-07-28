@@ -276,144 +276,120 @@ body {
 }
   
   /**
-  * Mobile Navigation 
-  */
+* Mobile Navigation 
+*/
+.mobile-nav-toggle {
+  color: #000000;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  transition: 0.5s;
+}
+
+@media (max-width: 991px) {
   .mobile-nav-toggle {
-    color: #fff;
-    font-size: 28px;
-    cursor: pointer;
-    display: none;
-    line-height: 0;
-    transition: 0.5s;
-  }
-  
-  @media (max-width: 991px) {
-    .mobile-nav-toggle {
-      display: block;
-    }
-  
-    .navbar ul {
-      display: none;
-    }
-  }
-  
-  .navbar-mobile {
-    position: fixed;
-    overflow: hidden;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background: rgba(77, 77, 77, 0.9);
-    transition: 0.3s;
-    z-index: 999;
-  }
-  
-  .navbar-mobile .mobile-nav-toggle {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-  }
-  
-  .navbar-mobile ul {
-    display: block;
-    position: absolute;
-    top: 55px;
-    right: 15px;
-    bottom: 15px;
-    left: 15px;
-    padding: 10px 0;
-    background-color: #fff;
-    overflow-y: auto;
-    transition: 0.3s;
-  }
-  
-  .navbar-mobile>ul>li {
-    padding: 0;
-  }
-  
-  .navbar-mobile a:hover:before,
-  .navbar-mobile li:hover>a:before,
-  .navbar-mobile .active:before {
-    visibility: hidden;
-  }
-  
-  .navbar-mobile a,
-  .navbar-mobile a:focus {
-    padding: 10px 20px;
-    font-size: 15px;
-    color: #666666;
-  }
-  
-  .navbar-mobile a:hover,
-  .navbar-mobile .active,
-  .navbar-mobile li:hover>a {
-    color: #2dc997;
-  }
-  
-  .navbar-mobile .getstarted,
-  .navbar-mobile .getstarted:focus {
-    margin: 15px;
-  }
-  
-  .navbar-mobile .dropdown ul {
-    position: static;
-    display: none;
-    margin: 10px 20px;
-    padding: 10px 0;
-    z-index: 99;
-    opacity: 1;
-    visibility: visible;
-    background: #fff;
-    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-  }
-  
-  .navbar-mobile .dropdown ul li {
-    min-width: 200px;
-  }
-  
-  .navbar-mobile .dropdown ul a {
-    padding: 10px 20px;
-  }
-  
-  .navbar-mobile .dropdown ul a i {
-    font-size: 12px;
-  }
-  
-  .navbar-mobile .dropdown ul a:hover,
-  .navbar-mobile .dropdown ul .active:hover,
-  .navbar-mobile .dropdown ul li:hover>a {
-    color: #2dc997;
-  }
-  
-  .navbar-mobile .dropdown>.dropdown-active {
     display: block;
   }
-  
-  
-/*--------------------------------------------------------------
-# Sections
---------------------------------------------------------------*/
-section {
+
+  .navbar ul {
+    display: none;
+  }
+}
+
+.navbar-mobile {
+  position: fixed;
   overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(77, 77, 77, 0.9);
+  transition: 0.3s;
+  z-index: 999;
 }
 
-/* Sections Header
---------------------------------*/
-.section-header .section-title {
-  font-size: 32px;
-  color: #111;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: 700;
-  margin-bottom: 5px;
+.navbar-mobile .mobile-nav-toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
 }
 
-.section-header .section-description {
-  text-align: center;
-  padding-bottom: 40px;
-  color: #999;
+.navbar-mobile ul {
+  display: block;
+  position: absolute;
+  top: 55px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  padding: 10px 0;
+  background-color: #fff;
+  overflow-y: auto;
+  transition: 0.3s;
 }
+
+.navbar-mobile>ul>li {
+  padding: 0;
+}
+
+.navbar-mobile a:hover:before,
+.navbar-mobile li:hover>a:before,
+.navbar-mobile .active:before {
+  visibility: hidden;
+}
+
+.navbar-mobile a,
+.navbar-mobile a:focus {
+  padding: 10px 20px;
+  font-size: 15px;
+  color: #666666;
+}
+
+.navbar-mobile a:hover,
+.navbar-mobile .active,
+.navbar-mobile li:hover>a {
+  color: #2dc997;
+}
+
+.navbar-mobile .getstarted,
+.navbar-mobile .getstarted:focus {
+  margin: 15px;
+}
+
+.navbar-mobile .dropdown ul {
+  position: static;
+  display: none;
+  margin: 10px 20px;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 1;
+  visibility: visible;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+}
+
+.navbar-mobile .dropdown ul li {
+  min-width: 200px;
+}
+
+.navbar-mobile .dropdown ul a {
+  padding: 10px 20px;
+}
+
+.navbar-mobile .dropdown ul a i {
+  font-size: 12px;
+}
+
+.navbar-mobile .dropdown ul a:hover,
+.navbar-mobile .dropdown ul .active:hover,
+.navbar-mobile .dropdown ul li:hover>a {
+  color: #2dc997;
+}
+
+.navbar-mobile .dropdown>.dropdown-active {
+  display: block;
+}
+
 
 /*--------------------------------------------------------------
 # Breadcrumbs
@@ -478,9 +454,6 @@ section {
     padding: 80px 0;
   }
   
-
-  
-  
   #heroo h1 {
     margin: 40px 0 10px 0;
     font-size: 48px;
@@ -501,7 +474,6 @@ section {
 --------------------------------*/
 #design-and-website-development {
   background: #fff;
-  padding: 80px 0;
 }
 #design-and-website-development h4{
   padding: 0px;
@@ -510,15 +482,16 @@ section {
 }
 
 #design-and-website-development .design-and-website-development-container .background {
-  min-height: 500px;
+  min-height: auto;
   background: url(../img/kiks/web.png) top no-repeat;
-  margin-top: 50px;
+  margin-top: 130px;
   margin-bottom: 10px;
   margin-left: 95px;
   
 }
 
 #design-and-website-development .design-and-website-development-container .content {
+  padding: 20px; /* Sesuaikan padding untuk menyesuaikan ukuran latar belakang */
   background: #fff;
 }
 
@@ -530,6 +503,7 @@ section {
   padding: 5px; /* Sesuaikan padding untuk menyesuaikan ukuran latar belakang */
   text-align: center; /* Agar kalimat berada di tengah */
   border-radius: 0px;
+  margin-top: 80px;
   display: inline-block; /* Sesuaikan radius sudut tumpul */
 }
 
@@ -557,6 +531,275 @@ section {
 #design-and-website-development .design-and-website-development-container p:last-child {
   margin-bottom: 0;
 }
+
+/* Styling untuk sosmedd */
+#web {
+  background: #ffffff;
+  padding: 50px 0; /* Sesuaikan padding di sini */
+}
+
+#web .web-container {
+  text-align: center; /* Agar konten berada di tengah secara horizontal */
+}
+
+#web h4 {
+  font-family: 'raleway', sans-serif;
+  color: #373435; /* Sesuaikan warna teks */
+  font-size: 24px; /* Sesuaikan ukuran font */
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#web p {
+  color: #80322B; /* Sesuaikan warna teks */
+  font-size: 16px; /* Sesuaikan ukuran font */
+  line-height: 26px;
+}
+
+#web p:last-child {
+  margin-bottom: 0;
+}
+
+
+
+/* Styling untuk webb */
+#webb {
+  background: #ffffff;
+}
+
+#webb .webb-container {
+  display: flex; /* Menggunakan flexbox untuk menyusun gambar dan teks secara horizontal */
+  justify-content: space-between; /* Agar gambar dan teks berada di ujung kiri dan kanan */
+  align-items: right; /* Agar gambar dan teks berada di tengah secara vertikal */
+  padding: 20px; /* Sesuaikan padding untuk menyesuaikan ukuran latar belakang */
+}
+
+#webb .webb-container .background {
+  min-height: auto; /* Ganti min-height menjadi auto */
+  background: url(../img/kiks/webb.png) top no-repeat;
+  margin-top: 50px;
+  margin-left: -100px; /* Pindahkan gambar ke kiri */
+}
+
+#webb .webb-container .backgroundd {
+  min-height: auto; /* Ganti min-height menjadi auto */
+  background: url(../img/kiks/webbb.png) top no-repeat;
+  margin-top: 150px; /* Ganti margin-top menjadi 100px */
+  margin-left: -100px; /* Pindahkan gambar ke kiri */
+  padding-top: 200px;
+}
+
+#webb h4 {
+  font-family: 'raleway', sans-serif;
+  line-height: 20px;
+}
+
+#webb p {
+  font-size: 16px; /* Sesuaikan ukuran font */
+  line-height: 26px;
+}
+
+#webb .webb-container .content {
+  background: #ffffff;
+  padding: 20px; /* Sesuaikan padding untuk menyesuaikan ukuran latar belakang */
+  flex: 1; /* Menggunakan flex: 1 untuk memastikan teks mengisi ruang tersedia */
+}
+
+@media (max-width: 768px) {
+  #webb .webb-container .title {
+    padding-top: 10px;
+  }
+}
+
+#webb .webb-container p {
+  line-height: 26px;
+}
+
+#webb .webb-container p:last-child {
+  margin-bottom: 0;
+}
+
+/* wib Us Section
+-------------------------------*/
+#wib {
+    background: #284B4D;
+    padding: 80px 0 60px 0;
+}
+
+#wib h3 {
+  font-family: 'raleway', sans-serif;
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 30px;
+  color: #ffffff;
+  text-transform: none;
+  text-align: center;
+}
+
+  
+#wib .wib-container .header {
+  height: 500px;
+  background-size: contain; /* Mengatur gambar agar berada di atas tengah dan sesuai proporsi */
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center; /* Mengatur gambar menjadi berada di tengah secara horizontal */
+  align-items: center; /* Mengatur gambar menjadi berada di atas secara tengah */
+  margin-top: -90px;
+  margin-left: 30px; 
+}
+  
+  #wib .wib-container .content {
+    background: #ff1f1f;
+  }
+  
+  #wib .wib-container .title {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 32px;
+    margin-top: 30px;
+  }
+  
+   /* Responsif untuk tampilan di bawah 768px */
+  @media (max-width: 768px) {
+    #wib .wib-container .title {
+      padding-top: 15px;
+    }
+  }
+
+  #wib .wib-container p {
+    line-height: 26px;
+    text-align: center;
+  }
+  
+  #wib .wib-container p:last-child {
+    margin-bottom: 0;
+  }
+  
+  #wib .wib-container .icon-box {
+    background: #284B4D;
+    background-size: cover;
+    padding: 0 0 30px 0;
+  }
+  
+  #wib .wib-container .icon-box {
+    margin-top: 50px;
+    position: relative; /* Tambahkan ini agar posisi absolut berfungsi dengan benar */
+  }
+  
+  #wib .wib-container .icon-box .vision-image,
+  #wib .wib-container .icon-box .mission-image {
+    width: 100px; /* Sesuaikan lebar gambar */
+    height: 100px; /* Sesuaikan tinggi gambar */
+    position: absolute; /* Letakkan gambar secara absolut */
+    top: 20px; /* Sesuaikan posisi vertikal gambar */
+    left: -30px; /* Sesuaikan posisi horizontal gambar */
+    background-size: contain; /* Ganti "cover" menjadi "contain" */
+    background-position: center; /* Posisikan gambar di tengah kotak */
+    background-repeat: no-repeat; /* Jangan ulangi gambar */
+    z-index: 1; /* Atur z-index yang lebih tinggi untuk menempatkan gambar di atas latar belakang */
+  }
+  #wib .wib-container .icon-box .vision-image{
+    margin-left: 90px;
+  }
+
+  #wib .wib-container .icon-box .mission-image {
+    margin-left: 100px;
+  }
+
+  #wib .wib-container .icon-box .icon {
+    float: left;
+    background: #284B4D;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid #284B4D;
+  }
+  
+  #wib .wib-container .icon-box .icon i {
+    color: #284B4D;
+    font-size: 24px;
+    line-height: 0;
+  }
+  
+  #wib .wib-container .icon-box .title {
+    margin-left: 80px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  
+  #wib .wib-container .icon-box .title a {
+    color: #ffffff;
+    font-size: larger;
+  }
+  
+  #wib .wib-container .icon-box .description {
+    margin-left: 80px;
+    line-height: 24px;
+    font-size: 14px;
+  }
+  #wib .icon-box {
+    border: 2px solid #284B4D; /* Warna border visi */
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    text-align: left; /* Warna latar belakang misi */
+  }
+  
+  #wib .icon-box:nth-child(odd) {
+    float: left; /* Mengatur elemen visi di sebelah kiri */
+    margin-right: 100px;
+  }
+  
+  #wib .icon-box:nth-child(even) {
+    float: right; /* Mengatur elemen misi di sebelah kanan */
+    margin-left: 80px;
+  }
+  
+  #wib .icon-box .icon {
+    background-color: #284B4D; /* Warna latar belakang ikon */
+    color: #284B4D; /* Warna ikon */
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+  }
+  
+  #wib .wib-container .icon-box .title {
+    font-family: 'raleway', sans-serif;
+    text-transform: capitalize;
+    color:#ffffff;
+    margin-left: 180px; /* Sesuaikan nilai margin sesuai kebutuhan */
+    
+  }
+  
+  #wib .wib-container .icon-box .description {
+    font-family: 'raleway', sans-serif;
+    margin-left: 180px; /* Sesuaikan nilai margin sesuai kebutuhan */
+  }
+
+  #wib .icon-box h4.title {
+    margin-right: -100px;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  #wib .icon-box p.description {
+    margin-right: -100px;
+    font-size: 16px;
+    text-align: left;
+  }
  
 /* Gaya logo WhatsApp */
 .whatsapp-logo {
@@ -722,8 +965,10 @@ section {
   }
   
   #footer .footer-social {
-    margin-top: 20px; /* Berikan ruang di atas sosial media */
-    margin-left: 600px;
+    margin-top: 20px;
+    display: flex; /* Menggunakan flexbox */
+    justify-content: center; /* Agar ikon sosial media berada di tengah secara horizontal */
+    align-items: center; /* Agar ikon sosial media berada di tengah secara vertikal */
   }
   
   #footer .footer-social a {

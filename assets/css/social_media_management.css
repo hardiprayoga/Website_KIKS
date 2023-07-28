@@ -276,119 +276,120 @@ body {
 }
 
   /**
-  * Mobile Navigation 
-  */
+* Mobile Navigation 
+*/
+.mobile-nav-toggle {
+  color: #000000;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  transition: 0.5s;
+}
+
+@media (max-width: 991px) {
   .mobile-nav-toggle {
-    color: #fff;
-    font-size: 28px;
-    cursor: pointer;
-    display: none;
-    line-height: 0;
-    transition: 0.5s;
-  }
-  
-  @media (max-width: 991px) {
-    .mobile-nav-toggle {
-      display: block;
-    }
-  
-    .navbar ul {
-      display: none;
-    }
-  }
-  
-  .navbar-mobile {
-    position: fixed;
-    overflow: hidden;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background: rgba(77, 77, 77, 0.9);
-    transition: 0.3s;
-    z-index: 999;
-  }
-  
-  .navbar-mobile .mobile-nav-toggle {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-  }
-  
-  .navbar-mobile ul {
-    display: block;
-    position: absolute;
-    top: 55px;
-    right: 15px;
-    bottom: 15px;
-    left: 15px;
-    padding: 10px 0;
-    background-color: #fff;
-    overflow-y: auto;
-    transition: 0.3s;
-  }
-  
-  .navbar-mobile>ul>li {
-    padding: 0;
-  }
-  
-  .navbar-mobile a:hover:before,
-  .navbar-mobile li:hover>a:before,
-  .navbar-mobile .active:before {
-    visibility: hidden;
-  }
-  
-  .navbar-mobile a,
-  .navbar-mobile a:focus {
-    padding: 10px 20px;
-    font-size: 15px;
-    color: #666666;
-  }
-  
-  .navbar-mobile a:hover,
-  .navbar-mobile .active,
-  .navbar-mobile li:hover>a {
-    color: #2dc997;
-  }
-  
-  .navbar-mobile .getstarted,
-  .navbar-mobile .getstarted:focus {
-    margin: 15px;
-  }
-  
-  .navbar-mobile .dropdown ul {
-    position: static;
-    display: none;
-    margin: 10px 20px;
-    padding: 10px 0;
-    z-index: 99;
-    opacity: 1;
-    visibility: visible;
-    background: #fff;
-    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-  }
-  
-  .navbar-mobile .dropdown ul li {
-    min-width: 200px;
-  }
-  
-  .navbar-mobile .dropdown ul a {
-    padding: 10px 20px;
-  }
-  
-  .navbar-mobile .dropdown ul a i {
-    font-size: 12px;
-  }
-  
-  .navbar-mobile .dropdown ul a:hover,
-  .navbar-mobile .dropdown ul .active:hover,
-  .navbar-mobile .dropdown ul li:hover>a {
-    color: #2dc997;
-  }
-  
-  .navbar-mobile .dropdown>.dropdown-active {
     display: block;
   }
+
+  .navbar ul {
+    display: none;
+  }
+}
+
+.navbar-mobile {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(77, 77, 77, 0.9);
+  transition: 0.3s;
+  z-index: 999;
+}
+
+.navbar-mobile .mobile-nav-toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.navbar-mobile ul {
+  display: block;
+  position: absolute;
+  top: 55px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  padding: 10px 0;
+  background-color: #fff;
+  overflow-y: auto;
+  transition: 0.3s;
+}
+
+.navbar-mobile>ul>li {
+  padding: 0;
+}
+
+.navbar-mobile a:hover:before,
+.navbar-mobile li:hover>a:before,
+.navbar-mobile .active:before {
+  visibility: hidden;
+}
+
+.navbar-mobile a,
+.navbar-mobile a:focus {
+  padding: 10px 20px;
+  font-size: 15px;
+  color: #666666;
+}
+
+.navbar-mobile a:hover,
+.navbar-mobile .active,
+.navbar-mobile li:hover>a {
+  color: #2dc997;
+}
+
+.navbar-mobile .getstarted,
+.navbar-mobile .getstarted:focus {
+  margin: 15px;
+}
+
+.navbar-mobile .dropdown ul {
+  position: static;
+  display: none;
+  margin: 10px 20px;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 1;
+  visibility: visible;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+}
+
+.navbar-mobile .dropdown ul li {
+  min-width: 200px;
+}
+
+.navbar-mobile .dropdown ul a {
+  padding: 10px 20px;
+}
+
+.navbar-mobile .dropdown ul a i {
+  font-size: 12px;
+}
+
+.navbar-mobile .dropdown ul a:hover,
+.navbar-mobile .dropdown ul .active:hover,
+.navbar-mobile .dropdown ul li:hover>a {
+  color: #2dc997;
+}
+
+.navbar-mobile .dropdown>.dropdown-active {
+  display: block;
+}
+
   
   
 /*--------------------------------------------------------------
@@ -505,7 +506,7 @@ section {
   #sosmed .sosmed-container .background {
     min-height: auto; /* Menghapus min-height agar background menyesuaikan tinggi konten */
     background: url(../img/kiks/sosmed.png) top no-repeat;
-    margin-top: 80px;
+    margin-top: 100px;
     margin-bottom: 10px;
     margin-left: 95px;
   }
@@ -539,7 +540,7 @@ section {
     background: #80322B; /* Set background color sesuai dengan warna title */
     border-radius: 10px;
   }
-  
+
   @media (max-width: 768px) {
     #sosmed .sosmed-container .title {
       padding-top: 10px;
@@ -641,7 +642,185 @@ section {
   margin-bottom: 0;
 }
 
+/* sosmedddd Us Section
+-------------------------------*/
+#sosmedddd {
+    background: #ffffff;
+    padding: 80px 0 60px 0;
+}
 
+#sosmedddd h3 {
+  font-family: 'raleway', sans-serif;
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 30px;
+  color: #373435;
+  text-transform: none;
+}
+
+  
+#sosmedddd .sosmedddd-container .header {
+  height: 500px;
+  background-size: contain; /* Mengatur gambar agar berada di atas tengah dan sesuai proporsi */
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center; /* Mengatur gambar menjadi berada di tengah secara horizontal */
+  align-items: center; /* Mengatur gambar menjadi berada di atas secara tengah */
+  margin-top: -90px;
+  margin-left: 30px; 
+}
+  
+  #sosmedddd .sosmedddd-container .content {
+    background: #dddddd;
+  }
+  
+  #sosmedddd .sosmedddd-container .title {
+    color: #333;
+    font-weight: 700;
+    font-size: 32px;
+    margin-top: 30px;
+  }
+  
+   /* Responsif untuk tampilan di bawah 768px */
+  @media (max-width: 768px) {
+    #sosmedddd .sosmedddd-container .title {
+      padding-top: 15px;
+    }
+  }
+
+  #sosmedddd .sosmedddd-container p {
+    line-height: 26px;
+  }
+  
+  #sosmedddd .sosmedddd-container p:last-child {
+    margin-bottom: 0;
+  }
+  
+  #sosmedddd .sosmedddd-container .icon-box {
+    background: #fff;
+    background-size: cover;
+    padding: 0 0 30px 0;
+  }
+  
+  #sosmedddd .sosmedddd-container .icon-box {
+    margin-top: 50px;
+    position: relative; /* Tambahkan ini agar posisi absolut berfungsi dengan benar */
+  }
+  
+  #sosmedddd .sosmedddd-container .icon-box .vision-image,
+  #sosmedddd .sosmedddd-container .icon-box .mission-image {
+    width: 100px; /* Sesuaikan lebar gambar */
+    height: 100px; /* Sesuaikan tinggi gambar */
+    position: absolute; /* Letakkan gambar secara absolut */
+    top: 20px; /* Sesuaikan posisi vertikal gambar */
+    left: -30px; /* Sesuaikan posisi horizontal gambar */
+    background-size: contain; /* Ganti "cover" menjadi "contain" */
+    background-position: center; /* Posisikan gambar di tengah kotak */
+    background-repeat: no-repeat; /* Jangan ulangi gambar */
+    z-index: 1; /* Atur z-index yang lebih tinggi untuk menempatkan gambar di atas latar belakang */
+  }
+  #sosmedddd .sosmedddd-container .icon-box .vision-image{
+    margin-left: 90px;
+  }
+
+  #sosmedddd .sosmedddd-container .icon-box .mission-image {
+    margin-left: 100px;
+  }
+
+  #sosmedddd .sosmedddd-container .icon-box .icon {
+    float: left;
+    background: #fff;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+  }
+  
+  #sosmedddd .sosmedddd-container .icon-box .icon i {
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 0;
+  }
+  
+  #sosmedddd .sosmedddd-container .icon-box .title {
+    margin-left: 80px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  
+  #sosmedddd .sosmedddd-container .icon-box .title a {
+    color: #373435;
+    font-size: larger;
+  }
+  
+  #sosmedddd .sosmedddd-container .icon-box .description {
+    margin-left: 80px;
+    line-height: 24px;
+    font-size: 14px;
+  }
+  #sosmedddd .icon-box {
+    border: 2px solid #ffffff; /* Warna border visi */
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: #525252;
+    text-align: left; /* Warna latar belakang misi */
+  }
+  
+  #sosmedddd .icon-box:nth-child(odd) {
+    float: left; /* Mengatur elemen visi di sebelah kiri */
+    margin-right: 100px;
+  }
+  
+  #sosmedddd .icon-box:nth-child(even) {
+    float: right; /* Mengatur elemen misi di sebelah kanan */
+    margin-left: 80px;
+  }
+  
+  #sosmedddd .icon-box .icon {
+    background-color: #ffffff; /* Warna latar belakang ikon */
+    color: #fff; /* Warna ikon */
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+  }
+  
+  #sosmedddd .sosmedddd-container .icon-box .title {
+    font-family: 'raleway', sans-serif;
+    text-transform: capitalize;
+    color:#373435;
+    margin-left: 180px; /* Sesuaikan nilai margin sesuai kebutuhan */
+    
+  }
+  
+  #sosmedddd .sosmedddd-container .icon-box .description {
+    font-family: 'raleway', sans-serif;
+    margin-left: 180px; /* Sesuaikan nilai margin sesuai kebutuhan */
+  }
+
+  #sosmedddd .icon-box h4.title {
+    margin-right: -100px;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  #sosmedddd .icon-box p.description {
+    margin-right: -100px;
+    font-size: 16px;
+    text-align: left;
+  }
   
 /* Gaya logo WhatsApp */
 .whatsapp-logo {
@@ -808,8 +987,10 @@ section {
   }
   
   #footer .footer-social {
-    margin-top: 20px; /* Berikan ruang di atas sosial media */
-    margin-left: 600px;
+    margin-top: 20px;
+    display: flex; /* Menggunakan flexbox */
+    justify-content: center; /* Agar ikon sosial media berada di tengah secara horizontal */
+    align-items: center; /* Agar ikon sosial media berada di tengah secara vertikal */
   }
   
   #footer .footer-social a {
