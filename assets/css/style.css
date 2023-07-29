@@ -656,7 +656,7 @@ section {
   display: flex;
   justify-content: center; /* Mengatur gambar menjadi berada di tengah secara horizontal */
   align-items: center; /* Mengatur gambar menjadi berada di atas secara tengah */
-  margin-top: -90px;
+  margin-top: -50px;
   margin-left: 30px; 
 }
 
@@ -682,7 +682,15 @@ section {
     }
 
     #about .about-container .background {
-      height: 600px; /* Adjust the image height for screens wider than 1600px */
+      height: 600px;
+      background: url(../img/logooo.png) center ;
+      background-size: contain; /* Mengatur gambar agar berada di atas tengah dan sesuai proporsi */
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center; /* Mengatur gambar menjadi berada di tengah secara horizontal */
+      align-items: center; /* Mengatur gambar menjadi berada di atas secara tengah */
+      margin-top: -80px;
+      margin-left: 30px; 
     }
   
     #about .about-container .title {
@@ -739,6 +747,16 @@ section {
     font-size: 18px;
     text-transform: uppercase;
   }
+
+  @media (min-width: 1600px) {
+    #about .about-container .icon-box .title {
+      margin-left: 80px;
+      font-weight: 500;
+      margin-bottom: 5px;
+      font-size: 35px;
+      text-transform: uppercase;
+    }
+  }
   
   #about .about-container .icon-box .title a {
     color: #111;
@@ -749,6 +767,15 @@ section {
     line-height: 24px;
     font-size: 14px;
   }
+
+  @media (min-width: 1600px) {
+    #about .about-container .icon-box .description {
+      margin-left: 80px;
+      line-height: 24px;
+      font-size: 22px;
+    }
+  }
+
   #about .icon-box {
     border: 2px solid #ffffff; /* Warna border visi */
     padding: 20px;
@@ -790,7 +817,6 @@ section {
     font-size: 16px;
     text-align: center;
   }
-
 /* Facts Section
 --------------------------------*/
 #facts {
