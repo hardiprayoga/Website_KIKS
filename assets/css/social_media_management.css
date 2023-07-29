@@ -570,7 +570,7 @@ section {
   font-family: 'raleway', sans-serif;
   color: #373435; /* Sesuaikan warna teks */
   font-size: 30px; /* Sesuaikan ukuran font */
-  margin-top: 100px;
+  margin-top: 250px;
   margin-bottom: 100px;
 }
 
@@ -606,51 +606,50 @@ section {
 }
 
 #sosmeddd .sosmeddd-container .backgroundd {
-  min-height: auto; /* Ganti min-height menjadi auto */
-  background: url(../img/kiks/sosmeddd.png) top no-repeat;
-  margin-top: 150px; /* Ganti margin-top menjadi 100px */
-  margin-left: -100px; /* Pindahkan gambar ke kiri */
+  margin-top: -90px;
+  margin-left: -50px; 
   padding-top: 200px;
 }
 
 @media screen and (min-width: 1600px) {
   #sosmeddd .sosmeddd-container .background {
-    min-height: auto; /* Ganti min-height menjadi auto */
-    background: url(../img/kiks/sosmedd.png) top no-repeat;
     margin-top: 50px;
     margin-left: 50px; /* Pindahkan gambar ke kiri */
   }
-  
+
   #sosmeddd .sosmeddd-container .backgroundd {
-    min-height: auto; /* Ganti min-height menjadi auto */
-    background: url(../img/kiks/sosmeddd.png) top no-repeat;
-    margin-top: 120px; /* Ganti margin-top menjadi 100px */
-    margin-left: -180px; /* Pindahkan gambar ke kiri */
-    margin-right: -80px;
-    margin-bottom: 60px;
+    margin-top: -90px;
+    margin-left: -80px; 
     padding-top: 200px;
+    padding-bottom: 100px;
   }
+  
 }
 
 #sosmeddd h4 {
   font-family: 'raleway', sans-serif;
-  line-height: 20px;
+  line-height: 30px;
+  margin-left: -110px;
 }
 
 #sosmeddd p {
   line-height: 12px;
+  margin-left: -110px;
 }
 
 @media screen and (min-width: 1600px) {
   #sosmeddd h4 {
     font-family: 'raleway', sans-serif;
-    line-height: 25px;
+    line-height: 50px;
     font-size: 35px;
+    margin-left: -160px;
+    margin-top: -40px;
   }
   
   #sosmeddd p {
     font-family: 'raleway', sans-serif;
     font-size: 20px;
+    margin-left: -160px;
   }
 }
 
