@@ -656,7 +656,7 @@ section {
   display: flex;
   justify-content: center; /* Mengatur gambar menjadi berada di tengah secara horizontal */
   align-items: center; /* Mengatur gambar menjadi berada di atas secara tengah */
-  margin-top: -50px;
+  margin-top: -80px;
   margin-left: 30px; 
 }
 
@@ -753,7 +753,7 @@ section {
       margin-left: 80px;
       font-weight: 500;
       margin-bottom: 5px;
-      font-size: 35px;
+      font-size: 30px;
       text-transform: uppercase;
     }
   }
