@@ -451,7 +451,7 @@ h6 {
   #hero h3 {
     font-family: "Raleway", sans-serif;
     margin-top: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     position: relative;
     display: inline-block; /* Ini akan memastikan lebar elemen menyesuaikan konten */
     padding: 15px 15px; /* Sesuaikan jarak antara teks dan border */
@@ -753,8 +753,9 @@ section {
       margin-left: 80px;
       font-weight: 500;
       margin-bottom: 5px;
-      font-size: 30px;
+      font-size: 35px;
       text-transform: uppercase;
+      margin-top: -50px;
     }
   }
   
@@ -771,9 +772,9 @@ section {
   @media (min-width: 1600px) {
     #about .about-container .icon-box .description {
       margin-left: 80px;
-      line-height: 24px;
-      font-size: 22px;
-      margin-bottom: 70px;
+      line-height: 30px;
+      font-size: 25px;
+      margin-top: 10px;
     }
   }
 
