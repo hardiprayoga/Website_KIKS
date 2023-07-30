@@ -402,7 +402,7 @@ h6 {
 --------------------------------------------------------------*/
 #hero h3 {
   font-family: "Raleway", sans-serif;
-  margin-top: 40px;
+  margin-top: 20px;
   position: relative;
   display: inline-block; /* Ini akan memastikan lebar elemen menyesuaikan konten */
   padding: 15px 15px; /* Sesuaikan jarak antara teks dan border */
@@ -473,7 +473,7 @@ h6 {
 
   #hero h1 {
     margin: 90px 0 60px 0;
-    font-size: 60px;
+    font-size: 55px;
     font-weight: 700;
     line-height: 56px;
     color: #fff;
