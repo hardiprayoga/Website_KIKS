@@ -510,6 +510,15 @@ section {
     margin-bottom: 10px;
     margin-left: 95px;
   }
+  @media (max-width: 768px) {
+    #sosmed .sosmed-container .background {
+      min-height: 500px; /* Menghapus min-height agar background menyesuaikan tinggi konten */
+      background: url(../img/kiks/sosmed.png) top no-repeat;
+      margin-top: 100px;
+      margin-bottom: -300px;
+      margin-left: 55px;
+    }
+  }
   
   #sosmed .sosmed-container .content {
     background: #ffffff;
@@ -626,6 +635,23 @@ section {
   
 }
 
+@media (max-width: 768px) {
+  #sosmeddd .sosmeddd-container .background {
+    min-height: 500px; /* Ganti min-height menjadi auto */
+    background: url(../img/kiks/sosmedd.png) top no-repeat;
+    margin-top: 50px;
+    margin-left: -100px; /* Pindahkan gambar ke kiri */
+    margin-bottom: -800px;
+  }
+
+  #sosmeddd .sosmeddd-container .backgroundd {
+    margin-top: 0px;
+    margin-left: 280px; 
+    padding-top: 100px;
+    padding-bottom: -90px;
+  }
+}
+
 #sosmeddd h4 {
   font-family: 'raleway', sans-serif;
   line-height: 30px;
@@ -650,6 +676,22 @@ section {
     font-family: 'raleway', sans-serif;
     font-size: 20px;
     margin-left: -160px;
+  }
+}
+
+@media (max-width: 768px) {
+  #sosmeddd h4 {
+    font-family: 'raleway', sans-serif;
+    line-height: 50px;
+    font-size: 35px;
+    margin-left: -20px;
+    margin-top: -40px;
+  }
+  
+  #sosmeddd p {
+    font-family: 'raleway', sans-serif;
+    font-size: 20px;
+    margin-left: -20px;
   }
 }
 
@@ -798,6 +840,29 @@ section {
     }
     
   }
+
+  @media (max-width: 768px) {
+    #sosmedddd .sosmedddd-container .icon-box .vision-image,
+    #sosmedddd .sosmedddd-container .icon-box .mission-image {
+      width: 100px; /* Sesuaikan lebar gambar */
+      height: 100px; /* Sesuaikan tinggi gambar */
+      position: absolute; /* Letakkan gambar secara absolut */
+      top: 20px; /* Sesuaikan posisi vertikal gambar */
+      left: 0px; /* Sesuaikan posisi horizontal gambar */
+      background-size: contain; /* Ganti "cover" menjadi "contain" */
+      background-position: center; /* Posisikan gambar di tengah kotak */
+      background-repeat: no-repeat; /* Jangan ulangi gambar */
+      z-index: 1; /* Atur z-index yang lebih tinggi untuk menempatkan gambar di atas latar belakang */
+    }
+    #sosmedddd .sosmedddd-container .icon-box .vision-image{
+      margin-left: 50px;
+    }
+  
+    #sosmedddd .sosmedddd-container .icon-box .mission-image {
+      margin-left: 100px;
+    }
+  }
+
   #sosmedddd .sosmedddd-container .icon-box .icon {
     float: left;
     background: #fff;
@@ -837,6 +902,16 @@ section {
     }
   }
 
+  @media (max-width: 768px) {
+    #sosmedddd .sosmedddd-container .icon-box .title {
+      margin-left: 30px;
+      font-weight: 500;
+      margin-bottom: 5px;
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+  }
+
   #sosmedddd .sosmedddd-container .icon-box .title a {
     color: #373435;
     font-size: larger;
@@ -851,6 +926,14 @@ section {
   @media screen and (min-width: 1600px) {
     #sosmedddd .sosmedddd-container .icon-box .description {
       margin-left: 80px;
+      line-height: 24px;
+      font-size: 17px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    #sosmedddd .sosmedddd-container .icon-box .description {
+      margin-left: 30px;
       line-height: 24px;
       font-size: 17px;
     }
@@ -886,6 +969,20 @@ section {
       margin-right: 10px;
     }
   }
+
+  @media screen and (max-width: 768px) {
+    #sosmedddd .icon-box:nth-child(odd) {
+      float:left; /* Mengatur elemen visi di sebelah kiri */
+      margin-right: 300px;
+      margin-left: 30px;
+    }
+    
+    #sosmedddd .icon-box:nth-child(even) {
+      float:right; /* Mengatur elemen misi di sebelah kanan */
+      margin-left: 80px;
+      margin-right: 10px;
+    }
+  }
   
   #sosmedddd .icon-box .icon {
     background-color: #ffffff; /* Warna latar belakang ikon */
@@ -912,6 +1009,38 @@ section {
     margin-left: 180px; /* Sesuaikan nilai margin sesuai kebutuhan */
   }
 
+  @media screen and (max-width: 768px) {
+    #sosmedddd .sosmedddd-container .icon-box .title {
+      font-family: 'raleway', sans-serif;
+      text-transform: capitalize;
+      color:#373435;
+      margin-left: 170px; /* Sesuaikan nilai margin sesuai kebutuhan */
+      margin-right: 70px;
+      text-align: center;
+    }
+    
+    #sosmedddd .sosmedddd-container .icon-box .description {
+      font-family: 'raleway', sans-serif;
+      margin-left: 10px; /* Sesuaikan nilai margin sesuai kebutuhan */
+      text-align: center;
+    }
+
+  }
+
+  #sosmedddd .icon-box h4.title {
+    margin-right: -100px;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  #sosmedddd .icon-box p.description {
+    margin-right: -100px;
+    font-size: 16px;
+    text-align: left;
+  }
+
   @media screen and (min-width: 1600px) {
     #sosmedddd .icon-box h4.title {
       margin-right: -100px;
@@ -928,19 +1057,23 @@ section {
     }
   }
 
-  #sosmedddd .icon-box h4.title {
-    margin-right: -100px;
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 10px;
-    text-align: left;
+  @media (max-width: 768px) {
+    #sosmedddd .icon-box h4.title {
+      margin-left: 20px;
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      text-align: left;
+    }
+    
+    #sosmedddd .icon-box p.description {
+      margin-right: -100px;
+      font-size: 16px;
+      text-align: left;
+    }
   }
+
   
-  #sosmedddd .icon-box p.description {
-    margin-right: -100px;
-    font-size: 16px;
-    text-align: left;
-  }
   
 /* Gaya logo WhatsApp */
 .whatsapp-logo {

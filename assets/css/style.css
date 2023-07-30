@@ -480,6 +480,10 @@ h6 {
   }
 }
 
+/* @media (max-width: 768px) {
+  h3
+} */
+
 #hero:before {
   content: "";
   /* background: rgba(255, 255, 255, 0.6); */
@@ -699,25 +703,59 @@ section {
     }
   }
   
+  @media (max-width: 768px) {
+    #about .about-container .background {
+      height: 500px;
+      background: url(../img/logooo.png) center ;
+      background-size: contain; /* Mengatur gambar agar berada di atas tengah dan sesuai proporsi */
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center; /* Mengatur gambar menjadi berada di tengah secara horizontal */
+      align-items: center; /* Mengatur gambar menjadi berada di atas secara tengah */
+      margin-top: -150px;
+    }
+    
+  }
+
    /* Responsif untuk tampilan di bawah 768px */
   @media (max-width: 768px) {
     #about .about-container .title {
-      padding-top: 15px;
+      padding-left: 60px;
     }
   }
 
   #about .about-container p {
     line-height: 26px;
   }
+
+  @media (max-width:768px){
+    #about .about-container p {
+      line-height: 26px;
+      padding-left: 60px;
+      padding-bottom: 80px;
+    }
+  }
   
   #about .about-container p:last-child {
     margin-bottom: 0;
   }
   
-  #about .about-container .icon-box {
-    background: #fff;
+  #about .about-container .text-center {
+    margin-top: -100px;
+    margin-left: 100px;
     background-size: cover;
-    padding: 0 0 30px 0;
+    padding: 0 0 30px 50px;
+  }
+
+  @media (max-width:768px) {
+    #about .about-container .text-center {
+      margin-top: 0px;
+      margin-left: 20px;
+      background: #ffffff;
+      background-size: cover;
+      padding: 0 0 30px 0;
+    }
+    
   }
   
   #about .about-container .icon-box .icon {
@@ -741,6 +779,7 @@ section {
   }
   
   #about .about-container .icon-box .title {
+    margin-top: -100px;
     margin-left: 80px;
     font-weight: 500;
     margin-bottom: 5px;
@@ -778,6 +817,34 @@ section {
     }
   }
 
+  @media screen and (max-width: 768px) {
+    #about .about-container .text-center .title {
+      font-family: 'raleway', sans-serif;
+      font-size: 24px;
+      text-transform: capitalize;
+      color:#000000;
+      margin-top: -100px;
+      margin-left: 90px; /* Sesuaikan nilai margin sesuai kebutuhan */
+      margin-right: 70px;
+      text-align: center;
+      justify-content: center;
+      justify-items: center;
+      padding-right: 80px;
+    }
+    
+    #about .about-container .text-center .description {
+      font-family: 'raleway', sans-serif;
+      margin-left: 10px; /* Sesuaikan nilai margin sesuai kebutuhan */
+      font-size: 14px;
+      margin-bottom: 70px;
+      justify-content: center;
+      justify-items: center;
+      padding-right: 80px;
+    }
+    
+  
+  }
+
   #about .icon-box {
     border: 2px solid #ffffff; /* Warna border visi */
     padding: 20px;
@@ -794,6 +861,20 @@ section {
   #about .icon-box:nth-child(even) {
     float: right; /* Mengatur elemen misi di sebelah kanan */
     margin-left: 30px;
+  }
+
+  @media screen and (max-width: 768px) {
+    #about .icon-box:nth-child(odd) {
+      float:left; /* Mengatur elemen visi di sebelah kiri */
+      margin-right: 300px;
+      margin-left: 30px;
+    }
+    
+    #about .icon-box:nth-child(even) {
+      float:right; /* Mengatur elemen misi di sebelah kanan */
+      margin-left: 80px;
+      margin-right: 10px;
+    }
   }
   
   #about .icon-box .icon {
