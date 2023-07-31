@@ -515,15 +515,28 @@ content: "/";
   
 }
 
+
+@media (max-width: 1024px) {
+  #design-and-website-development .design-and-website-development-container .background {
+    min-height: 500px; /* Menghapus min-height agar background menyesuaikan tinggi konten */
+    background: url(../img/kiks/web.png) top no-repeat;
+    margin-top: 100px;
+    margin-bottom: -300px;
+    margin-left: 80px;
+  }
+}
+
 @media (max-width: 768px) {
   #design-and-website-development .design-and-website-development-container .background {
     min-height: 500px; /* Menghapus min-height agar background menyesuaikan tinggi konten */
     background: url(../img/kiks/web.png) top no-repeat;
     margin-top: 100px;
     margin-bottom: -300px;
-    margin-left: 50px;
+    margin-left: 10px;
   }
 }
+
+
 
 #design-and-website-development .design-and-website-development-container .content {
   padding: 20px; /* Sesuaikan padding untuk menyesuaikan ukuran latar belakang */
@@ -638,6 +651,23 @@ content: "/";
   }
 }
 
+@media (max-width: 1024px) {
+  #webb .webb-container .background {
+    min-height: 500px; /* Ganti min-height menjadi auto */
+    background: url(../img/kiks/webb.png) top no-repeat;
+    margin-top: 50px;
+    margin-left: 0px; /* Pindahkan gambar ke kiri */
+    margin-bottom: -800px;
+  }
+
+  #webb .webb-container .backgroundd {
+    margin-top: 0px;
+    margin-left: -40px; 
+    padding-top: 100px;
+    padding-bottom: 0px;
+  }
+}
+
 @media (max-width: 768px) {
   #webb .webb-container .background {
     min-height: 500px; /* Ganti min-height menjadi auto */
@@ -649,7 +679,25 @@ content: "/";
 
   #webb .webb-container .backgroundd {
     margin-top: 0px;
-    margin-left: 280px; 
+    margin-left: 370px; 
+    padding-top: 100px;
+    padding-bottom: -90px;
+  }
+}
+
+@media (max-width: 425px) {
+  #webb .webb-container .background {
+    min-height:auto; /* Ganti min-height menjadi auto */
+    background: url(../img/kiks/webb.png) top no-repeat;
+    margin-top: 50px;
+    margin-left: -50px; /* Pindahkan gambar ke kiri */
+    margin-bottom: -800px;
+  }
+
+  #webb .webb-container .backgroundd {
+    min-height:auto;
+    margin-top: 200px;
+    margin-left: 120px; 
     padding-top: 100px;
     padding-bottom: -90px;
   }
@@ -683,11 +731,46 @@ content: "/";
   }
 }
 
+@media (max-width: 1024px) {
+  #webb h4 {
+    font-family: 'raleway', sans-serif;
+    line-height: 50px;
+    font-style:inherit;
+    font-size: 20px;
+    margin-left: -60px;
+    margin-top: -40px;
+  }
+  
+  #webb p {
+    font-family: 'raleway', sans-serif;
+    font-size: 18px;
+    margin-top: -10px;
+    margin-left: -60px;
+  }
+}
+
 @media (max-width: 768px) {
   #webb h4 {
     font-family: 'raleway', sans-serif;
     line-height: 50px;
     font-size: 24px;
+    margin-left: -20px;
+    margin-top: -40px;
+  }
+  
+  #webb p {
+    font-family: 'raleway', sans-serif;
+    font-size: 18px;
+    margin-top: -20px;
+    margin-left: -20px;
+  }
+}
+
+@media (max-width: 425px) {
+  #webb h4 {
+    font-family: 'raleway', sans-serif;
+    line-height: 50px;
+    font-size: 20px;
     margin-left: -20px;
     margin-top: -40px;
   }
@@ -849,6 +932,29 @@ margin-left: 30px;
   
 }
 
+@media screen and (min-width: 1024px) {
+  #wib .wib-container .icon-box .vision-image,
+  #wib .wib-container .icon-box .mission-image {
+    width: 100px; /* Sesuaikan lebar gambar */
+    height: 100px; /* Sesuaikan tinggi gambar */
+    position: absolute; /* Letakkan gambar secara absolut */
+    top: 20px; /* Sesuaikan posisi vertikal gambar */
+    left: -30px; /* Sesuaikan posisi horizontal gambar */
+    background-size: contain; /* Ganti "cover" menjadi "contain" */
+    background-position: center; /* Posisikan gambar di tengah kotak */
+    background-repeat: no-repeat; /* Jangan ulangi gambar */
+    z-index: 1; /* Atur z-index yang lebih tinggi untuk menempatkan gambar di atas latar belakang */
+  }
+  #wib .wib-container .icon-box .vision-image{
+    margin-left: 90px;
+  }
+
+  #wib .wib-container .icon-box .mission-image {
+    margin-left: 100px;
+  }
+}
+
+
 @media (max-width: 768px) {
   #wib .wib-container .icon-box .vision-image,
   #wib .wib-container .icon-box .mission-image {
@@ -863,11 +969,33 @@ margin-left: 30px;
     z-index: 1; /* Atur z-index yang lebih tinggi untuk menempatkan gambar di atas latar belakang */
   }
   #wib .wib-container .icon-box .vision-image{
-    margin-left: 50px;
+    margin-left: 120px;
   }
 
   #wib .wib-container .icon-box .mission-image {
-    margin-left: 100px;
+    margin-left: 140px;
+  }
+}
+
+@media (max-width: 425px) {
+  #wib .wib-container .icon-box .vision-image,
+  #wib .wib-container .icon-box .mission-image {
+    width: 100px; /* Sesuaikan lebar gambar */
+    height: 100px; /* Sesuaikan tinggi gambar */
+    position: absolute; /* Letakkan gambar secara absolut */
+    top: 20px; /* Sesuaikan posisi vertikal gambar */
+    left: -150px; /* Sesuaikan posisi horizontal gambar */
+    background-size: contain; /* Ganti "cover" menjadi "contain" */
+    background-position: center; /* Posisikan gambar di tengah kotak */
+    background-repeat: no-repeat; /* Jangan ulangi gambar */
+    z-index: 1; /* Atur z-index yang lebih tinggi untuk menempatkan gambar di atas latar belakang */
+  }
+  #wib .wib-container .icon-box .vision-image{
+    margin-left: 120px;
+  }
+
+  #wib .wib-container .icon-box .mission-image {
+    margin-left: 140px;
   }
 }
 
@@ -978,6 +1106,20 @@ margin-left: 30px;
   }
 }
 
+@media screen and (max-width: 1024px) {
+  #wib .icon-box:nth-child(odd) {
+    float:left; /* Mengatur elemen visi di sebelah kiri */
+    margin-right: 0px;
+    margin-left: 30px;
+  }
+  
+  #wib .icon-box:nth-child(even) {
+    float:right; /* Mengatur elemen misi di sebelah kanan */
+    margin-left: 0px;
+    margin-right: 10px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   #wib .icon-box:nth-child(odd) {
     float:left; /* Mengatur elemen visi di sebelah kiri */
@@ -1022,15 +1164,34 @@ margin-left: 30px;
     font-family: 'raleway', sans-serif;
     text-transform: capitalize;
     color:#ffffff;
-    margin-left: 170px; /* Sesuaikan nilai margin sesuai kebutuhan */
-    margin-right: 70px;
-    text-align: center;
+    margin-left: 250px; /* Sesuaikan nilai margin sesuai kebutuhan */
+    margin-top: 4px;
+    text-align: left;
   }
   
   #wib .wib-container .icon-box .description {
     font-family: 'raleway', sans-serif;
-    margin-left: 10px; /* Sesuaikan nilai margin sesuai kebutuhan */
-    text-align: center;
+    margin-left: 250px; /* Sesuaikan nilai margin sesuai kebutuhan */
+    text-align: left;
+  }
+
+}
+
+@media screen and (max-width: 425px) {
+  #wib .wib-container .icon-box .title {
+    font-family: 'raleway', sans-serif;
+    text-transform: capitalize;
+    color:#ffffff;
+    margin-left: 100px; /* Sesuaikan nilai margin sesuai kebutuhan */
+    margin-top: 4px;
+    text-align: left;
+  }
+  
+  #wib .wib-container .icon-box .description {
+    font-family: 'raleway', sans-serif;
+    margin-left: 100px; /* Sesuaikan nilai margin sesuai kebutuhan */
+    text-align: left;
+    padding-right: 180px;
   }
 
 }

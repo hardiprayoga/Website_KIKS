@@ -579,7 +579,21 @@ section {
       display: flex;
       justify-content: center; /* Mengatur gambar menjadi berada di tengah secara horizontal */
       align-items: center; /* Mengatur gambar menjadi berada di atas secara tengah */
-      margin-top: -150px;
+      margin-top: -120px;
+    }
+    
+  }
+
+  @media (max-width: 425px) {
+    #about .about-container .background {
+      height: 500px;
+      background: url(../img/logooo.png) center ;
+      background-size: contain; /* Mengatur gambar agar berada di atas tengah dan sesuai proporsi */
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center; /* Mengatur gambar menjadi berada di tengah secara horizontal */
+      align-items: center; /* Mengatur gambar menjadi berada di atas secara tengah */
+      margin-top: -120px;
     }
     
   }
@@ -691,6 +705,33 @@ section {
       text-transform: capitalize;
       color:#000000;
       margin-top: -100px;
+      margin-left: 75px; /* Sesuaikan nilai margin sesuai kebutuhan */
+      margin-right: 100px;
+      text-align: center;
+      justify-content: center;
+      justify-items: center;
+      padding-right: 80px;
+    }
+    
+    #about .about-container .text-center .description {
+      font-family: 'raleway', sans-serif;
+      margin-left: 10px; /* Sesuaikan nilai margin sesuai kebutuhan */
+      font-size: 14px;
+      margin-bottom: 70px;
+      justify-content: center;
+      justify-items: center;
+      padding-right: px;
+    }
+    
+  
+  }
+  @media screen and (max-width: 425px) {
+    #about .about-container .text-center .title {
+      font-family: 'raleway', sans-serif;
+      font-size: 24px;
+      text-transform: capitalize;
+      color:#000000;
+      margin-top: -120px;
       margin-left: 90px; /* Sesuaikan nilai margin sesuai kebutuhan */
       margin-right: 70px;
       text-align: center;
