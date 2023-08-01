@@ -938,7 +938,7 @@ section {
       z-index: 1; /* Atur z-index yang lebih tinggi untuk menempatkan gambar di atas latar belakang */
     }
     #sosmedddd .sosmedddd-container .icon-box .vision-image{
-      margin-left: 120px;
+      margin-left: 100px;
     }
   
     #sosmedddd .sosmedddd-container .icon-box .mission-image {
@@ -960,7 +960,7 @@ section {
       z-index: 1; /* Atur z-index yang lebih tinggi untuk menempatkan gambar di atas latar belakang */
     }
     #sosmedddd .sosmedddd-container .icon-box .vision-image{
-      margin-left: 120px;
+      margin-left: 100px;
     }
   
     #sosmedddd .sosmedddd-container .icon-box .mission-image {
@@ -1151,14 +1151,14 @@ section {
       font-family: 'raleway', sans-serif;
       text-transform: capitalize;
       color:#373435;
-      margin-left: 100px; /* Sesuaikan nilai margin sesuai kebutuhan */
+      margin-left: 85px; /* Sesuaikan nilai margin sesuai kebutuhan */
       margin-top: 4px;
       text-align: left;
     }
     
     #sosmedddd .sosmedddd-container .icon-box .description {
       font-family: 'raleway', sans-serif;
-      margin-left: 100px; /* Sesuaikan nilai margin sesuai kebutuhan */
+      margin-left: 85px; /* Sesuaikan nilai margin sesuai kebutuhan */
       text-align: left;
       padding-right: 180px;
     }
@@ -1320,6 +1320,14 @@ section {
   #footer .footer-logo img {
     max-width: 300px;
   }
+
+  @media (max-width: 425px){
+    #footer .footer-logo img {
+      max-width: 150px;
+      margin-left: 130px;
+      margin-top: 20px;
+    }
+  }
   #footer .copyright {
     text-align: center;
   }
@@ -1374,6 +1382,34 @@ section {
   
   #footer .footer-contact p {
     margin: 0px;
+  }
+
+  /* @media (max-width: 768px){
+    #footer .footer-contact {
+      margin-left: -200px;
+      margin-right: 115px;
+      margin-top: 100px;
+      font-size: 12px;
+      text-align: center;
+    }
+    #footer .footer-contact h3{
+      font-size: 14px;
+      margin-left: 0px;
+    }
+  } */
+
+  @media (max-width: 425px){
+    #footer .footer-contact {
+      margin-left: -200px;
+      margin-right: 115px;
+      margin-top: 100px;
+      font-size: 12px;
+      text-align: center;
+    }
+    #footer .footer-contact h3{
+      font-size: 14px;
+      margin-left: 0px;
+    }
   }
   
   #footer .footer-social {
