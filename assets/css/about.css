@@ -569,8 +569,22 @@ section {
       margin-top: 45px;
     }
   }
-  
-  @media (max-width: 768px) {
+
+  @media (max-width: 1440px) {
+    #about .about-container .background {
+      height: 500px;
+      background: url(../img/logooo.png) center ;
+      background-size: contain; /* Mengatur gambar agar berada di atas tengah dan sesuai proporsi */
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center; /* Mengatur gambar menjadi berada di tengah secara horizontal */
+      align-items: center; /* Mengatur gambar menjadi berada di atas secara tengah */
+      margin-top: -80px;
+    }
+    
+  }
+
+  @media (max-width: 1024px) {
     #about .about-container .background {
       height: 500px;
       background: url(../img/logooo.png) center ;
@@ -583,8 +597,8 @@ section {
     }
     
   }
-
-  @media (max-width: 425px) {
+  
+  @media (max-width: 768px) {
     #about .about-container .background {
       height: 500px;
       background: url(../img/logooo.png) center ;
@@ -593,7 +607,7 @@ section {
       display: flex;
       justify-content: center; /* Mengatur gambar menjadi berada di tengah secara horizontal */
       align-items: center; /* Mengatur gambar menjadi berada di atas secara tengah */
-      margin-top: -120px;
+      margin-top: -150px;
     }
     
   }
@@ -698,6 +712,25 @@ section {
     }
   }
 
+  @media screen and (max-width: 1440px) {
+    #about .about-container .text-center .title {
+      margin-left: 80px;
+      font-weight: 500;
+      margin-bottom: 5px;
+      font-size: 30px;
+      text-transform: uppercase;
+      margin-top: 150px;
+    }
+    
+    #about .about-container .text-center .description {
+      margin-left: 80px;
+      line-height: 30px;
+      font-size: 20px;
+      margin-top: 10px;
+    
+    }
+  }
+
   @media screen and (max-width: 768px) {
     #about .about-container .text-center .title {
       font-family: 'raleway', sans-serif;
@@ -720,7 +753,6 @@ section {
       margin-bottom: 70px;
       justify-content: center;
       justify-items: center;
-      padding-right: px;
     }
     
   

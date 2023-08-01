@@ -466,6 +466,40 @@ h6 {
   }
 } 
 
+@media screen and (min-width: 1440px) {
+  #hero {
+  width: 100%;
+  height: 90vh;
+  background: url(../img/hero-3.jpg) top center;
+  background-size: cover;
+  position: relative;
+  }
+
+  #hero h1 {
+    margin: 100px 0 60px 0;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #fff;
+  }
+  #hero h3 {
+    font-family: "Raleway", sans-serif;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block; /* Ini akan memastikan lebar elemen menyesuaikan konten */
+    padding: 15px 15px; /* Sesuaikan jarak antara teks dan border */
+    background-color: #ffffff;
+    border: 50px solid #fff; /* Tambahkan border di sekitar elemen h3 */
+    border-radius: 10px; /* Gunakan nilai setengah dari tinggi untuk membuat border berbentuk lingkaran */
+    color: #284B4D; /* Warna teks */
+    font-size: 35px; /* Sesuaikan ukuran font sesuai kebutuhan */
+    text-align: center; /* Pusatkan teks secara horizontal */
+    z-index: -1;
+    line-height: 1.5;
+  }
+} 
+
 @media (max-width: 1024px) {
   #hero {
     background-attachment:local;
@@ -824,6 +858,20 @@ section {
     }
   }
 
+  @media (max-width: 1440px) {
+    #about .about-container .background {
+      height: 500px;
+      background: url(../img/logooo.png) center ;
+      background-size: contain; /* Mengatur gambar agar berada di atas tengah dan sesuai proporsi */
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center; /* Mengatur gambar menjadi berada di tengah secara horizontal */
+      align-items: center; /* Mengatur gambar menjadi berada di atas secara tengah */
+      margin-top: -80px;
+    }
+    
+  }
+
   @media (max-width: 1024px) {
     #about .about-container .background {
       height: 500px;
@@ -949,6 +997,25 @@ section {
       line-height: 30px;
       font-size: 25px;
       margin-top: 10px;
+    }
+  }
+
+  @media screen and (max-width: 1440px) {
+    #about .about-container .text-center .title {
+      margin-left: 80px;
+      font-weight: 500;
+      margin-bottom: 5px;
+      font-size: 30px;
+      text-transform: uppercase;
+      margin-top: 150px;
+    }
+    
+    #about .about-container .text-center .description {
+      margin-left: 80px;
+      line-height: 30px;
+      font-size: 20px;
+      margin-top: 10px;
+    
     }
   }
 
