@@ -882,15 +882,15 @@ section {
 
     #sosmedddd .sosmedddd-container .icon-box .vision-image,
     #sosmedddd .sosmedddd-container .icon-box .mission-image {
-      width: 180px; /* Sesuaikan lebar gambar */
-      height: 180px; /* Sesuaikan tinggi gambar */
-      position: absolute; /* Letakkan gambar secara absolut */
-      top: 20px; /* Sesuaikan posisi vertikal gambar */
-      left: -30px; /* Sesuaikan posisi horizontal gambar */
+      width: 250px; /* Sesuaikan lebar gambar */
+      height: 250px; /* Sesuaikan tinggi gambar */
+      position: relative; /* Letakkan gambar secara absolut */
+      top: 40px; /* Sesuaikan posisi vertikal gambar */
+      left: -20px; /* Sesuaikan posisi horizontal gambar */
       background-size: contain; /* Ganti "cover" menjadi "contain" */
       background-position: center; /* Posisikan gambar di tengah kotak */
       background-repeat: no-repeat; /* Jangan ulangi gambar */
-      z-index: 1; /* Atur z-index yang lebih tinggi untuk menempatkan gambar di atas latar belakang */
+ /* Atur z-index yang lebih tinggi untuk menempatkan gambar di atas latar belakang */
     }
     #sosmedddd .sosmedddd-container .icon-box .vision-image{
       margin-left: 10px;
@@ -903,24 +903,18 @@ section {
   }
 
   @media screen and (min-width: 1024px) {
-    #sosmedddd .sosmedddd-container .icon-box .vision-image,
-    #sosmedddd .sosmedddd-container .icon-box .mission-image {
-      width: 100px; /* Sesuaikan lebar gambar */
-      height: 100px; /* Sesuaikan tinggi gambar */
-      position: absolute; /* Letakkan gambar secara absolut */
-      top: 20px; /* Sesuaikan posisi vertikal gambar */
-      left: -30px; /* Sesuaikan posisi horizontal gambar */
-      background-size: contain; /* Ganti "cover" menjadi "contain" */
-      background-position: center; /* Posisikan gambar di tengah kotak */
-      background-repeat: no-repeat; /* Jangan ulangi gambar */
-      z-index: 1; /* Atur z-index yang lebih tinggi untuk menempatkan gambar di atas latar belakang */
+    #sosmedddd .sosmedddd-container .text-center .vision-image,
+    #sosmedddd .sosmedddd-container .text-center .mission-image {
+      width:150px; /* Sesuaikan lebar gambar */
+      height: 150px; /* Sesuaikan tinggi gambar */
     }
-    #sosmedddd .sosmedddd-container .icon-box .vision-image{
-      margin-left: 90px;
-    }
-  
-    #sosmedddd .sosmedddd-container .icon-box .mission-image {
-      margin-left: 100px;
+  }
+
+  @media screen and (min-width: 768px) {
+    #sosmedddd .sosmedddd-container .text-center .vision-image,
+    #sosmedddd .sosmedddd-container .text-center .mission-image {
+      width:150px; /* Sesuaikan lebar gambar */
+      height: 150px; /* Sesuaikan tinggi gambar */
     }
   }
 
@@ -1128,20 +1122,70 @@ section {
     margin-left: 180px; /* Sesuaikan nilai margin sesuai kebutuhan */
   }
 
-  @media screen and (max-width: 768px) {
-    #sosmedddd .sosmedddd-container .icon-box .title {
+  @media screen and (max-width: 1600px) {
+    #sosmedddd .sosmedddd-container .text-center .title {
       font-family: 'raleway', sans-serif;
+      font-size: larger;
       text-transform: capitalize;
       color:#373435;
-      margin-left: 250px; /* Sesuaikan nilai margin sesuai kebutuhan */
-      margin-top: 4px;
-      text-align: left;
+      text-align: center;
     }
     
-    #sosmedddd .sosmedddd-container .icon-box .description {
+    #sosmedddd .sosmedddd-container .text-center .description {
       font-family: 'raleway', sans-serif;
-      margin-left: 250px; /* Sesuaikan nilai margin sesuai kebutuhan */
-      text-align: left;
+      font-size: medium;
+      text-align: center;
+    }
+
+  }
+
+  @media screen and (max-width: 1440px) {
+    #sosmedddd .sosmedddd-container .text-center .title {
+      font-family: 'raleway', sans-serif;
+      font-size: large;
+      text-transform: capitalize;
+      color:#373435;
+      text-align: center;
+    }
+    
+    #sosmedddd .sosmedddd-container .text-center .description {
+      font-family: 'raleway', sans-serif;
+      font-size: medium;
+      text-align: center;
+    }
+
+  }
+
+  @media screen and (max-width: 1024px) {
+    #sosmedddd .sosmedddd-container .text-center .title {
+      font-family: 'raleway', sans-serif;
+      font-size: large;
+      text-transform: capitalize;
+      color:#373435;
+      text-align: center;
+    }
+    
+    #sosmedddd .sosmedddd-container .text-center .description {
+      font-family: 'raleway', sans-serif;
+      font-size: medium;
+      text-align: center;
+    }
+
+  }
+
+  @media screen and (max-width: 768px) {
+    #sosmedddd .sosmedddd-container .text-center .title {
+      font-family: 'raleway', sans-serif;
+      font-size: large;
+      text-transform: capitalize;
+      color:#373435;
+      text-align: center;
+    }
+    
+    #sosmedddd .sosmedddd-container .text-center .description {
+      font-family: 'raleway', sans-serif;
+      font-size:small;
+      text-align: center;
     }
 
   }
@@ -1401,14 +1445,16 @@ section {
   @media (max-width: 425px){
     #footer .footer-contact {
       margin-left: -200px;
-      margin-right: 115px;
+      margin-right: 100px;
       margin-top: 100px;
+      justify-content: center;
+      justify-items: center;
+      text-justify: auto;
       font-size: 12px;
       text-align: center;
     }
     #footer .footer-contact h3{
       font-size: 14px;
-      margin-left: 0px;
     }
   }
   

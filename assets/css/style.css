@@ -1002,43 +1002,35 @@ section {
 
   @media screen and (max-width: 1440px) {
     #about .about-container .text-center .title {
-      margin-left: 80px;
+      /* margin-left: 80px;
       font-weight: 500;
       margin-bottom: 5px;
       font-size: 30px;
       text-transform: uppercase;
-      margin-top: 150px;
+      margin-top: 150px; */
+      justify-content: center;
+      justify-items: center;
     }
     
     #about .about-container .text-center .description {
-      margin-left: 80px;
+      /* margin-left: 80px;
       line-height: 30px;
       font-size: 20px;
-      margin-top: 10px;
+      margin-top: 10px; */
+      justify-content: center;
+      justify-items: center;
     
     }
   }
 
   @media screen and (max-width: 768px) {
     #about .about-container .text-center .title {
-      font-family: 'raleway', sans-serif;
-      font-size: 24px;
-      text-transform: capitalize;
-      color:#000000;
-      margin-top: -100px;
-      margin-left: 75px; /* Sesuaikan nilai margin sesuai kebutuhan */
-      margin-right: 100px;
-      text-align: center;
       justify-content: center;
       justify-items: center;
-      padding-right: 80px;
+      /* padding-right: 80px; */
     }
     
     #about .about-container .text-center .description {
-      font-family: 'raleway', sans-serif;
-      margin-left: 10px; /* Sesuaikan nilai margin sesuai kebutuhan */
-      font-size: 14px;
-      margin-bottom: 70px;
       justify-content: center;
       justify-items: center;
     }
@@ -1051,10 +1043,9 @@ section {
       font-size: 24px;
       text-transform: capitalize;
       color:#000000;
-      margin-top: -120px;
+      /* margin-top: -120px;
       margin-left: 90px; /* Sesuaikan nilai margin sesuai kebutuhan */
-      margin-right: 70px;
-      text-align: center;
+      /* margin-right: 70px; */
       justify-content: center;
       justify-items: center;
       padding-right: 80px;
@@ -1062,12 +1053,37 @@ section {
     
     #about .about-container .text-center .description {
       font-family: 'raleway', sans-serif;
-      margin-left: 10px; /* Sesuaikan nilai margin sesuai kebutuhan */
+      /* margin-left: 10px; Sesuaikan nilai margin sesuai kebutuhan */
       font-size: 14px;
-      margin-bottom: 70px;
+      /* margin-bottom: 70px; */
       justify-content: center;
       justify-items: center;
       padding-right: 80px;
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    #about .about-container .text-center .title {
+      font-family: 'raleway', sans-serif;
+      font-size: 24px;
+      text-transform: capitalize;
+      color:#000000;
+      /* margin-top: -120px;
+      margin-left: 90px; /* Sesuaikan nilai margin sesuai kebutuhan */
+      /* margin-right: 70px; */
+      justify-content: center;
+      justify-items: center;
+      /* padding-right: 80px; */
+    }
+    
+    #about .about-container .text-center .description {
+      font-family: 'raleway', sans-serif;
+      /* margin-left: 10px; Sesuaikan nilai margin sesuai kebutuhan */
+      font-size: 14px;
+      /* margin-bottom: 70px; */
+      justify-content: center;
+      justify-items: center;
+      /* padding-right: 80px; */
     }
     
   

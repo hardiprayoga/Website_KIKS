@@ -912,15 +912,15 @@ margin-left: 30px;
 
   #wib .wib-container .icon-box .vision-image,
   #wib .wib-container .icon-box .mission-image {
-    width: 180px; /* Sesuaikan lebar gambar */
-    height: 180px; /* Sesuaikan tinggi gambar */
-    position: absolute; /* Letakkan gambar secara absolut */
-    top: 20px; /* Sesuaikan posisi vertikal gambar */
-    left: -30px; /* Sesuaikan posisi horizontal gambar */
+    width: 250px; /* Sesuaikan lebar gambar */
+    height: 250px; /* Sesuaikan tinggi gambar */
+    position: relative; /* Letakkan gambar secara absolut */
+    top: 40px; /* Sesuaikan posisi vertikal gambar */
+    left: -20px; /* Sesuaikan posisi horizontal gambar */
     background-size: contain; /* Ganti "cover" menjadi "contain" */
     background-position: center; /* Posisikan gambar di tengah kotak */
     background-repeat: no-repeat; /* Jangan ulangi gambar */
-    z-index: 1; /* Atur z-index yang lebih tinggi untuk menempatkan gambar di atas latar belakang */
+/* Atur z-index yang lebih tinggi untuk menempatkan gambar di atas latar belakang */
   }
   #wib .wib-container .icon-box .vision-image{
     margin-left: 10px;
@@ -931,6 +931,23 @@ margin-left: 30px;
   }
   
 }
+
+@media screen and (min-width: 1024px) {
+  #wib .wib-container .text-center .vision-image,
+  #wib .wib-container .text-center .mission-image {
+    width:150px; /* Sesuaikan lebar gambar */
+    height: 150px; /* Sesuaikan tinggi gambar */
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #wib .wib-container .text-center .vision-image,
+  #wib .wib-container .text-center .mission-image {
+    width:150px; /* Sesuaikan lebar gambar */
+    height: 150px; /* Sesuaikan tinggi gambar */
+  }
+}
+
 
 @media screen and (min-width: 1024px) {
   #wib .wib-container .icon-box .vision-image,
@@ -1157,6 +1174,74 @@ margin-left: 30px;
 #wib .wib-container .icon-box .description {
   font-family: 'raleway', sans-serif;
   margin-left: 180px; /* Sesuaikan nilai margin sesuai kebutuhan */
+}
+
+@media screen and (max-width: 1600px) {
+  #wib .wib-container .text-center .title {
+    font-family: 'raleway', sans-serif;
+    font-size: larger;
+    text-transform: capitalize;
+    color:#373435;
+    text-align: center;
+  }
+  
+  #wib .wib-container .text-center .description {
+    font-family: 'raleway', sans-serif;
+    font-size: medium;
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 1440px) {
+  #wib .wib-container .text-center .title {
+    font-family: 'raleway', sans-serif;
+    font-size: large;
+    text-transform: capitalize;
+    color:#373435;
+    text-align: center;
+  }
+  
+  #wib .wib-container .text-center .description {
+    font-family: 'raleway', sans-serif;
+    font-size: medium;
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 1024px) {
+  #wib .wib-container .text-center .title {
+    font-family: 'raleway', sans-serif;
+    font-size: large;
+    text-transform: capitalize;
+    color:#ffffff;
+    text-align: center;
+  }
+  
+  #wib .wib-container .text-center .description {
+    font-family: 'raleway', sans-serif;
+    font-size: medium;
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  #wib .wib-container .text-center .title {
+    font-family: 'raleway', sans-serif;
+    font-size: large;
+    text-transform: capitalize;
+    color:#ffffff;
+    text-align: center;
+  }
+  
+  #wib .wib-container .text-center .description {
+    font-family: 'raleway', sans-serif;
+    font-size:small;
+    text-align: center;
+  }
+
 }
 
 @media screen and (max-width: 768px) {
