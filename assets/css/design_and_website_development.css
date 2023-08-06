@@ -526,7 +526,7 @@ content: "/";
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 830px) {
   #design-and-website-development .design-and-website-development-container .background {
     min-height: 500px; /* Menghapus min-height agar background menyesuaikan tinggi konten */
     background: url(../img/kiks/web.png) top no-repeat;
@@ -637,18 +637,17 @@ content: "/";
 
 @media screen and (min-width: 1600px) {
   #webb .webb-container .background {
-    min-height: auto; /* Ganti min-height menjadi auto */
-    background: url(../img/kiks/webb.png) top no-repeat;
     margin-top: 50px;
     margin-left: 50px; /* Pindahkan gambar ke kiri */
   }
-  
+
   #webb .webb-container .backgroundd {
     margin-top: -90px;
     margin-left: -80px; 
     padding-top: 200px;
     padding-bottom: 100px;
   }
+  
 }
 
 @media (max-width: 1024px) {
@@ -668,7 +667,7 @@ content: "/";
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 830px) {
   #webb .webb-container .background {
     min-height: 500px; /* Ganti min-height menjadi auto */
     background: url(../img/kiks/webb.png) top no-repeat;
@@ -705,28 +704,27 @@ content: "/";
 
 #webb h4 {
   font-family: 'raleway', sans-serif;
-  line-height: 20px;
+  line-height: 30px;
+  margin-left: -110px;
 }
 
 #webb p {
-  font-size: 16px; /* Sesuaikan ukuran font */
-  line-height: 26px;
-  text-align: justify;
+  line-height: 12px;
+  margin-left: -110px;
 }
 
 @media screen and (min-width: 1600px) {
   #webb h4 {
     font-family: 'raleway', sans-serif;
     line-height: 50px;
-    font-size: 30px;
+    font-size: 35px;
     margin-left: -160px;
     margin-top: -40px;
   }
   
   #webb p {
     font-family: 'raleway', sans-serif;
-    font-size: 22px;
-    text-align: justify;
+    font-size: 20px;
     margin-left: -160px;
   }
 }
@@ -734,52 +732,48 @@ content: "/";
 @media (max-width: 1024px) {
   #webb h4 {
     font-family: 'raleway', sans-serif;
-    line-height: 50px;
-    font-style:inherit;
-    font-size: 20px;
+    line-height: 40px;
+    font-size: 28px;
     margin-left: -60px;
     margin-top: -40px;
   }
   
   #webb p {
     font-family: 'raleway', sans-serif;
-    font-size: 18px;
-    margin-top: -10px;
+    font-size: 20px;
     margin-left: -60px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 830px) {
   #webb h4 {
     font-family: 'raleway', sans-serif;
-    line-height: 50px;
-    font-size: 24px;
+    line-height: 60px;
+    font-size: 28px;
     margin-left: -20px;
     margin-top: -40px;
   }
   
   #webb p {
     font-family: 'raleway', sans-serif;
-    font-size: 18px;
-    margin-top: -20px;
+    font-size: 20px;
     margin-left: -20px;
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 500px) {
   #webb h4 {
     font-family: 'raleway', sans-serif;
-    line-height: 50px;
-    font-size: 20px;
-    margin-left: -20px;
-    margin-top: -40px;
+    line-height: 40px;
+    font-size: 26px;
+    text-align: center;
   }
   
   #webb p {
     font-family: 'raleway', sans-serif;
-    font-size: 18px;
-    margin-top: -20px;
+    font-size: 20px;
     margin-left: -20px;
+    text-align: center;
   }
 }
 
@@ -788,7 +782,6 @@ content: "/";
   padding: 20px; /* Sesuaikan padding untuk menyesuaikan ukuran latar belakang */
   flex: 1; /* Menggunakan flex: 1 untuk memastikan teks mengisi ruang tersedia */
 }
-
 
 @media (max-width: 768px) {
   #webb .webb-container .title {
@@ -1424,88 +1417,125 @@ margin-left: 30px;
 # Footer
 --------------------------------------------------------------*/
 #footer {
-    background: #343b40;
-    padding: 30px 0;
-    color: #000000;
-    font-size: 14px;
-  }
-  #footer .footer-logo {
-    text-align: left;
-  }
-  
+  background: #343b40;
+  padding: 30px 0;
+  color: #000000;
+  font-size: 14px;
+}
+#footer .footer-logo {
+  text-align: left;
+}
+
+#footer .footer-logo img {
+  max-width: 300px;
+}
+
+@media (max-width: 425px){
   #footer .footer-logo img {
-    max-width: 300px;
+    max-width: 150px;
+    margin-left: 130px;
+    margin-top: 20px;
   }
-  #footer .copyright {
+}
+#footer .copyright {
+  text-align: center;
+}
+
+#footer {
+  background: #343b40;
+  padding: 30px 0;
+  color: #ffffff; /* Ubah warna teks menjadi putih */
+  font-size: 14px;
+  display: flex; /* Menggunakan flexbox */
+  flex-direction: column; /* Menjadikan konten berada dalam satu kolom */
+  align-items: right; /* Mengatur konten agar berada di tengah-tengah secara horizontal */
+}
+
+#footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#footer .footer-links {
+  text-align: left;
+  margin-top: 0px; /* Berikan ruang di atas daftar tautan */
+  margin-left: -60px;
+}
+
+#footer .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#footer .footer-links li {
+  margin-bottom: 10px; /* Berikan jarak antara setiap tautan */
+}
+
+#footer .footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#footer .footer-links a:hover {
+  text-decoration: underline; /* Efek underline saat tautan dihover */
+}
+
+
+#footer .footer-contact {
+  text-align: left;
+}
+
+#footer .footer-contact p {
+  margin: 0px;
+}
+
+/* @media (max-width: 768px){
+  #footer .footer-contact {
+    margin-left: -200px;
+    margin-right: 115px;
+    margin-top: 100px;
+    font-size: 12px;
     text-align: center;
   }
-  
-  #footer {
-    background: #343b40;
-    padding: 30px 0;
-    color: #ffffff; /* Ubah warna teks menjadi putih */
+  #footer .footer-contact h3{
     font-size: 14px;
-    display: flex; /* Menggunakan flexbox */
-    flex-direction: column; /* Menjadikan konten berada dalam satu kolom */
-    align-items: right; /* Mengatur konten agar berada di tengah-tengah secara horizontal */
+    margin-left: 0px;
   }
-  
-  #footer .footer-content {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-  }
-  
-  #footer .footer-links {
-    text-align: left;
-    margin-top: 0px; /* Berikan ruang di atas daftar tautan */
-    margin-left: -60px;
-  }
-  
-  #footer .footer-links ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  #footer .footer-links li {
-    margin-bottom: 10px; /* Berikan jarak antara setiap tautan */
-  }
-  
-  #footer .footer-links a {
-    color: #ffffff;
-    text-decoration: none;
-  }
-  
-  #footer .footer-links a:hover {
-    text-decoration: underline; /* Efek underline saat tautan dihover */
-  }
-  
-  
+} */
+
+@media (max-width: 500px){
   #footer .footer-contact {
-    text-align: left;
+    margin-left: -200px;
+    margin-right: 100px;
+    margin-top: 100px;
+    justify-content: center;
+    justify-items: center;
+    text-justify: auto;
+    font-size: 12px;
+    text-align: center;
   }
-  
-  #footer .footer-contact p {
-    margin: 0px;
+  #footer .footer-contact h3{
+    font-size: 14px;
   }
-  
-  #footer .footer-social {
-    margin-top: 20px;
-    display: flex; /* Menggunakan flexbox */
-    justify-content: center; /* Agar ikon sosial media berada di tengah secara horizontal */
-    align-items: center; /* Agar ikon sosial media berada di tengah secara vertikal */
-  }
-  
-  #footer .footer-social a {
-    margin-right: 10px; /* Berikan jarak antara ikon sosial media */
-    color: #ffffff; /* Ubah warna ikon sosial media menjadi putih */
-  }
-  
-  #footer .footer-bottom {
-    text-align: left;
-    padding-top: 20px; /* Berikan ruang di atas teks hak cipta */
-  }
-  
+}
+
+#footer .footer-social {
+  margin-top: 20px;
+  display: flex; /* Menggunakan flexbox */
+  justify-content: center; /* Agar ikon sosial media berada di tengah secara horizontal */
+  align-items: center; /* Agar ikon sosial media berada di tengah secara vertikal */
+}
+
+#footer .footer-social a {
+  margin-right: 10px; /* Berikan jarak antara ikon sosial media */
+  color: #ffffff; /* Ubah warna ikon sosial media menjadi putih */
+}
+
+#footer .footer-bottom {
+  text-align: left;
+  padding-top: 20px; /* Berikan ruang di atas teks hak cipta */
+}

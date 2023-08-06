@@ -520,7 +520,7 @@ section {
       margin-left: 80px;
     }
   }
-  @media (max-width: 768px) {
+  @media (max-width: 830px) {
     #sosmed .sosmed-container .background {
       min-height: 500px; /* Menghapus min-height agar background menyesuaikan tinggi konten */
       background: url(../img/kiks/sosmed.png) top no-repeat;
@@ -662,7 +662,7 @@ section {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 830px) {
   #sosmeddd .sosmeddd-container .background {
     min-height: 500px; /* Ganti min-height menjadi auto */
     background: url(../img/kiks/sosmedd.png) top no-repeat;
@@ -1458,7 +1458,7 @@ section {
     }
   } */
 
-  @media (max-width: 425px){
+  @media (max-width: 500px){
     #footer .footer-contact {
       margin-left: -200px;
       margin-right: 100px;
