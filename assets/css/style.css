@@ -575,7 +575,7 @@ h6 {
   }
 
   #hero h1 {
-    margin: 0 0 60px 0;
+    margin: -200px 0 60px 0;
     font-size: 8px;
     font-weight: 700;
     line-height: 56px;
@@ -896,6 +896,19 @@ section {
       justify-content: center; /* Mengatur gambar menjadi berada di tengah secara horizontal */
       align-items: center; /* Mengatur gambar menjadi berada di atas secara tengah */
       margin-top: -150px;
+    }
+    
+  }
+
+  @media (max-width: 768px) {
+    #about .about-container .background {
+      height: 500px;
+      background: url(../img/logooo.png) center ;
+      background-size: contain; /* Mengatur gambar agar berada di atas tengah dan sesuai proporsi */
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center; /* Mengatur gambar menjadi berada di tengah secara horizontal */
+      align-items: center; /* Mengatur gambar menjadi berada di atas secara tengah */
     }
     
   }
