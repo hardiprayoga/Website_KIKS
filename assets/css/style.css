@@ -575,11 +575,12 @@ h6 {
   }
 
   #hero h1 {
-    margin: -200px 0 60px 0;
+    margin: -100px 0 60px 0;
     font-size: 8px;
     font-weight: 700;
     line-height: 56px;
     color: #fff;
+    padding-top: -80px;
   }
   #hero h3 {
     font-family: "Raleway", sans-serif;
