@@ -80,202 +80,214 @@ body {
     }
   }
   
-  /*--------------------------------------------------------------
-  # Header
-  --------------------------------------------------------------*/
-  #header {
-    height: 70px;
-    transition: all 0.5s;
-    z-index: 997;
-    background: #fff; /* Ganti dengan latar belakang yang tidak transparan */
-  }
-  
-  #header #logo h1 {
-  
-      float: left; /* Membuat logo berada di pojok kiri */
-  }
-  #logo a img {
-      width: 500px; /* Atur lebar logo sesuai kebutuhan */
-      height: auto; /* Biarkan tinggi logo menyesuaikan agar tidak terdistorsi */
-      margin-left: -140px;
-  }
-  
-  #header #logo h1 a,
-  #header #logo h1 a:hover {
-    color: #fff;
-  }
-  
-  #header #logo img {
-    padding: 0;
-    margin-left: -50;
-  }
-  
-  #header.header-transparent {
-    background: visible;
-  }
-  
-  #header.header-scrolled {
-    background: rgba(255, 255, 255, 0.9);
-    height: 70px;
-    transition: all 0.5s;
-  }
-  
-  .scrolled-offset {
-    margin-top: 70px;
-  }
-  
-  /*--------------------------------------------------------------
-  # Navigation Menu
-  --------------------------------------------------------------*/
-  /**
-  * Desktop Navigation 
-  */
-  .navbar {
-    padding: 0;
-  }
-  
-  .navbar ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    list-style: none;
-    align-items: center;
-  }
-  
-  .navbar li {
-    position: relative;
-  }
-  
-  .navbar>ul>li {
-    white-space: nowrap;
-    padding: 10px 0 10px 24px;
-  }
-  
-  .navbar a,
-  .navbar a:focus {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-family: "Poppins", sans-serif;
-    color: #000000;
-    font-size: 14px;
-    padding: 0 4px;
-    white-space: nowrap;
-    transition: 0.3s;
-    letter-spacing: 0.4px;
-    position: relative;
-    text-transform: uppercase;
-  }
-  
-  .navbar a i,
-  .navbar a:focus i {
-    font-size: 12px;
-    line-height: 0;
-    margin-left: 5px;
-  }
-  
-  .navbar>ul>li>a:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: -6px;
-    left: 0;
-    background-color: #2dc997;
-    visibility: hidden;
-    transform: scaleX(0);
-    transition: all 0.3s ease-in-out 0s;
-  }
-  
-  .navbar a:hover:before,
-  .navbar li:hover>a:before,
-  .navbar .active:before {
-    visibility: visible;
-    transform: scaleX(1);
-  }
-  
-  .navbar a:hover,
-  .navbar .active,
-  .navbar .active:focus,
-  .navbar li:hover>a {
-    color: #000000;
-  }
-  
-  .navbar .dropdown ul {
-    display: block;
-    position: absolute;
-    left: 24px;
-    top: calc(100% + 30px);
-    margin: 0;
-    padding: 10px 0;
-    z-index: 99;
-    opacity: 0;
-    visibility: hidden;
-    background: #fff;
-    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-    transition: 0.3s;
-  }
-  
-  .navbar .dropdown ul li {
-    min-width: 200px;
-  }
-  
-  .navbar .dropdown ul a {
-    padding: 10px 20px;
-    font-size: 14px;
-    text-transform: none;
-    color: #666666;
-  }
-  
-  .navbar .dropdown ul a i {
-    font-size: 12px;
-  }
-  
-  .navbar .dropdown ul a:hover,
-  .navbar .dropdown ul .active:hover,
-  .navbar .dropdown ul li:hover>a {
-    color: #2dc997;
-  }
-  
-  .navbar .dropdown:hover>ul {
-    opacity: 1;
-    top: 100%;
-    visibility: visible;
-  }
-  
-  .navbar .dropdown .dropdown ul {
-    top: 0;
-    left: calc(100% - 30px);
-    visibility: hidden;
-  }
-  
-  .navbar .dropdown .dropdown:hover>ul {
-    opacity: 1;
-    top: 0;
-    left: 100%;
-    visibility: visible;
-  }
-  
-  @media (max-width: 1366px) {
-    .navbar .dropdown .dropdown ul {
-      left: -90%;
-    }
-  
-    .navbar .dropdown .dropdown:hover>ul {
-      left: -100%;
-    }
-  }
-  
-  .consultation-link {
-    background-color: #284B4D; /* Set your desired background color */
-    padding: 12px 18px; /* Adjust padding as needed */
-    border: 3px solid #284B4D; /* Set your desired border color and width */
-    border-radius: 30px; /* Optionally add border radius to round the corners */
-    color: #ffffff !important; /* Set the text color to white and prioritize it */
-    text-decoration: none; /* Remove underlines from the link */
+
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  height: 60px;
+  transition: all 0.5s;
+  z-index: 997;
+  background: #fff; /* Ganti dengan latar belakang yang tidak transparan */
 }
 
-  /**
+#header #logo h1 {
+
+    float: left; /* Membuat logo berada di pojok kiri */
+    
+}
+#logo a img {
+  width: 500px; /* Atur lebar logo sesuai kebutuhan */
+  height: auto; /* Biarkan tinggi logo menyesuaikan agar tidak terdistorsi */
+  margin-left: -140px;
+}
+
+@media (max-width: 500px) {
+  #logo a img {
+    width: 400px; /* Atur lebar logo sesuai kebutuhan */
+    height: auto; /* Biarkan tinggi logo menyesuaikan agar tidak terdistorsi */
+    margin-left: -100px;
+  }
+}
+
+#header #logo h1 a,
+#header #logo h1 a:hover {
+  color: #fff;
+}
+
+#header #logo img {
+  padding: 0;
+  margin-left: -50;
+}
+
+#header.header-transparent {
+  background: visible;
+}
+
+#header.header-scrolled {
+  background: rgba(255, 255, 255, 0.9);
+  height: 60px;
+  transition: all 0.5s;
+}
+
+.scrolled-offset {
+  margin-top: 70px;
+}
+ 
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
+.navbar {
+  padding: 0;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar>ul>li {
+  white-space: nowrap;
+  padding: 10px 0 10px 24px;
+}
+
+.navbar a,
+.navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  font-size: 14px;
+  padding: 0 4px;
+  white-space: nowrap;
+  transition: 0.3s;
+  letter-spacing: 0.4px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.navbar a i,
+.navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+
+.navbar>ul>li>a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -6px;
+  left: 0;
+  background-color: #2dc997;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar a:hover:before,
+.navbar li:hover>a:before,
+.navbar .active:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
+  color: #000000;
+}
+
+.navbar .dropdown ul {
+  display: block;
+  position: absolute;
+  left: 24px;
+  top: calc(100% + 30px);
+  margin: 0;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: 0.3s;
+}
+
+.navbar .dropdown ul li {
+  min-width: 200px;
+}
+
+.navbar .dropdown ul a {
+  padding: 10px 20px;
+  font-size: 14px;
+  text-transform: none;
+  color: #666666;
+}
+
+.navbar .dropdown ul a i {
+  font-size: 12px;
+}
+
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover>a {
+  color: #2dc997;
+}
+
+.navbar .dropdown:hover>ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+.navbar .dropdown .dropdown ul {
+  top: 0;
+  left: calc(100% - 30px);
+  visibility: hidden;
+}
+
+.navbar .dropdown .dropdown:hover>ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+  visibility: visible;
+}
+
+@media (max-width: 1366px) {
+  .navbar .dropdown .dropdown ul {
+    left: -90%;
+  }
+
+  .navbar .dropdown .dropdown:hover>ul {
+    left: -100%;
+  }
+}
+
+.consultation-link {
+  background-color: #284B4D; /* Set your desired background color */
+  padding: 12px 18px; /* Adjust padding as needed */
+  border: 3px solid #284B4D; /* Set your desired border color and width */
+  border-radius: 30px; /* Optionally add border radius to round the corners */
+  color: #ffffff !important; /* Set the text color to white and prioritize it */
+  text-decoration: none; /* Remove underlines from the link */
+}
+
+/**
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
@@ -286,6 +298,29 @@ body {
   line-height: 0;
   transition: 0.5s;
 }
+
+@media (max-width: 500px) {
+  .mobile-nav-toggle {
+    color: #000000;
+    font-size: 18px;
+    cursor: pointer;
+    display: none;
+    line-height: 0;
+    transition: 0.5s;
+  }
+}
+
+/* @media (max-width: 380px) {
+  .mobile-nav-toggle {
+    color: #000000;
+    font-size: 18px;
+    cursor: pointer;
+    display: none;
+    line-height: 0;
+    transition: 0.5s;
+    margin-right: 50px;
+  }
+} */
 
 @media (max-width: 991px) {
   .mobile-nav-toggle {
@@ -390,7 +425,6 @@ body {
   display: block;
 }
 
-  
   
 /*--------------------------------------------------------------
 # Sections
@@ -560,6 +594,78 @@ section {
     border-radius: 10px;
   }
 
+  @media (max-width: 500px) {
+    #sosmed .sosmed-container .title {
+      color: #ffffff;
+      font-weight: 20px;
+      font-size: 16px;
+      background-color: #80322B;
+      padding: 5px; /* Sesuaikan padding untuk menyesuaikan ukuran latar belakang */
+      text-align: center; /* Agar kalimat berada di tengah */
+      border-radius: 0px;
+      display: inline-block; /* Sesuaikan radius sudut tumpul */
+      margin-top: 30px;
+      margin-left: 80px;
+      position: relative; /* Tambahkan property position untuk menggunakan pseudo-element */
+      justify-items: center;
+      justify-content: center;
+    }
+    
+    #sosmed .sosmed-container .title::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      background: #80322B; /* Set background color sesuai dengan warna title */
+      border-radius: 10px;
+    }
+    #sosmed .sosmed-container h4{
+      text-align: center;
+    }
+    #sosmed .sosmed-container p{
+      text-align: center;
+    }
+    
+  }
+
+  @media (max-width: 380px) {
+    #sosmed .sosmed-container .title {
+      color: #ffffff;
+      font-weight: 20px;
+      font-size: 14px;
+      background-color: #80322B;
+      padding: 5px; /* Sesuaikan padding untuk menyesuaikan ukuran latar belakang */
+      text-align: center; /* Agar kalimat berada di tengah */
+      border-radius: 0px;
+      display: inline-block; /* Sesuaikan radius sudut tumpul */
+      margin-top: 40px;
+      margin-left: 80px;
+      position: relative; /* Tambahkan property position untuk menggunakan pseudo-element */
+    }
+    
+    #sosmed .sosmed-container .title::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      background: #80322B; /* Set background color sesuai dengan warna title */
+      border-radius: 10px;
+    }
+    #sosmed .sosmed-container h4{
+      text-align: center;
+    }
+    #sosmed .sosmed-container p{
+      text-align: center;
+    }
+    
+  }
+
   @media (max-width: 768px) {
     #sosmed .sosmed-container .title {
       padding-top: 10px;
@@ -692,6 +798,24 @@ section {
     min-height:auto;
     margin-top: 200px;
     margin-left: 120px; 
+    padding-top: 100px;
+    padding-bottom: -90px;
+  }
+}
+
+@media (max-width: 380px) {
+  #sosmeddd .sosmeddd-container .background {
+    min-height:auto; /* Ganti min-height menjadi auto */
+    background: url(../img/kiks/sosmedd.png) top no-repeat;
+    margin-top: 50px;
+    margin-left: -50px; /* Pindahkan gambar ke kiri */
+    margin-bottom: -800px;
+  }
+
+  #sosmeddd .sosmeddd-container .backgroundd {
+    min-height:auto;
+    margin-top: 200px;
+    margin-left: 100px; 
     padding-top: 100px;
     padding-bottom: -90px;
   }
@@ -1385,6 +1509,14 @@ section {
     #footer .footer-logo img {
       max-width: 150px;
       margin-left: 130px;
+      margin-top: 20px;
+    }
+  }
+
+  @media (max-width: 380px){
+    #footer .footer-logo img {
+      max-width: 150px;
+      margin-left: 100px;
       margin-top: 20px;
     }
   }
