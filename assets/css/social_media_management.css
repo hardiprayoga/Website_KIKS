@@ -631,6 +631,43 @@ section {
     
   }
 
+  @media (max-width: 400px) {
+    #sosmed .sosmed-container .title {
+      color: #ffffff;
+      font-weight: 20px;
+      font-size: 16px;
+      background-color: #80322B;
+      padding: 5px; /* Sesuaikan padding untuk menyesuaikan ukuran latar belakang */
+      text-align: center; /* Agar kalimat berada di tengah */
+      border-radius: 0px;
+      display: inline-block; /* Sesuaikan radius sudut tumpul */
+      margin-top: 30px;
+      margin-left: 70px;
+      position: relative; /* Tambahkan property position untuk menggunakan pseudo-element */
+      justify-items: center;
+      justify-content: center;
+    }
+    
+    #sosmed .sosmed-container .title::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      background: #80322B; /* Set background color sesuai dengan warna title */
+      border-radius: 10px;
+    }
+    #sosmed .sosmed-container h4{
+      text-align: center;
+    }
+    #sosmed .sosmed-container p{
+      text-align: center;
+    }
+    
+  }
+
   @media (max-width: 380px) {
     #sosmed .sosmed-container .title {
       color: #ffffff;
@@ -642,7 +679,42 @@ section {
       border-radius: 0px;
       display: inline-block; /* Sesuaikan radius sudut tumpul */
       margin-top: 40px;
-      margin-left: 80px;
+      margin-left: 70px;
+      position: relative; /* Tambahkan property position untuk menggunakan pseudo-element */
+    }
+    
+    #sosmed .sosmed-container .title::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      background: #80322B; /* Set background color sesuai dengan warna title */
+      border-radius: 10px;
+    }
+    #sosmed .sosmed-container h4{
+      text-align: center;
+    }
+    #sosmed .sosmed-container p{
+      text-align: center;
+    }
+    
+  }
+
+  @media (max-width: 360px) {
+    #sosmed .sosmed-container .title {
+      color: #ffffff;
+      font-weight: 20px;
+      font-size: 14px;
+      background-color: #80322B;
+      padding: 5px; /* Sesuaikan padding untuk menyesuaikan ukuran latar belakang */
+      text-align: center; /* Agar kalimat berada di tengah */
+      border-radius: 0px;
+      display: inline-block; /* Sesuaikan radius sudut tumpul */
+      margin-top: 40px;
+      margin-left: 65px;
       position: relative; /* Tambahkan property position untuk menggunakan pseudo-element */
     }
     
@@ -923,11 +995,11 @@ section {
     padding: 80px 0 60px 0;
 }
 
-#sosmedddd h3 {
+#sosmedddd h4 {
   font-family: 'raleway', sans-serif;
-  font-weight: 700;
+  font-weight: bolder;
   margin-bottom: 2px;
-  font-size: 30px;
+  font-size: 35px;
   color: #373435;
   text-transform: none;
 }
@@ -957,11 +1029,11 @@ section {
 
   @media screen and (min-width: 1600px) {
 
-    #sosmedddd h3 {
+    #sosmedddd h4 {
       font-family: 'raleway', sans-serif;
       font-weight: 700;
       margin-bottom: 2px;
-      font-size: 40px;
+      font-size: 35px;
       color: #373435;
       text-transform: none;
     }
@@ -1324,27 +1396,29 @@ section {
     
     #sosmedddd .sosmedddd-container .text-center .description {
       font-family: 'raleway', sans-serif;
-      font-size:small;
+      font-size: 14px;
       text-align: center;
     }
 
   }
 
-  @media screen and (max-width: 425px) {
-    #sosmedddd .sosmedddd-container .icon-box .title {
+  @media screen and (max-width: 500px) {
+    #sosmedddd .sosmedddd-container .text-center .title {
+      margin-top: 10px;
       font-family: 'raleway', sans-serif;
       text-transform: capitalize;
+      font-size: 22px;
       color:#373435;
-      margin-left: 85px; /* Sesuaikan nilai margin sesuai kebutuhan */
-      margin-top: 4px;
-      text-align: left;
+      text-align: center;
     }
     
-    #sosmedddd .sosmedddd-container .icon-box .description {
+    #sosmedddd .sosmedddd-container .text-center .description {
       font-family: 'raleway', sans-serif;
-      margin-left: 85px; /* Sesuaikan nilai margin sesuai kebutuhan */
-      text-align: left;
-      padding-right: 180px;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 25px;
+      font-size: 18px;
+      
     }
 
   }

@@ -569,6 +569,17 @@ content: "/";
   }
 }
 
+@media (max-width: 500px) {
+  #design-and-website-development .design-and-website-development-container .background {
+    min-height: 500px; /* Menghapus min-height agar background menyesuaikan tinggi konten */
+    background: url(../img/kiks/web.png) top no-repeat;
+    margin-top: 100px;
+    margin-bottom: -300px;
+    margin-left: -5px;
+  }
+}
+
+
 
 
 #design-and-website-development .design-and-website-development-container .content {
@@ -610,7 +621,44 @@ content: "/";
     border-radius: 0px;
     display: inline-block; /* Sesuaikan radius sudut tumpul */
     margin-top: 30px;
-    margin-left: 80px;
+    margin-left: 95px;
+    position: relative; /* Tambahkan property position untuk menggunakan pseudo-element */
+    justify-items: center;
+    justify-content: center;
+  }
+  
+  #design-and-website-development .design-and-website-development-container .title::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: #80322B; /* Set background color sesuai dengan warna title */
+    border-radius: 10px;
+  }
+  #design-and-website-development .design-and-website-development-container h4{
+    text-align: center;
+  }
+  #design-and-website-development .design-and-website-development-container p{
+    text-align: center;
+  }
+  
+}
+
+@media (max-width: 400px) {
+  #design-and-website-development .design-and-website-development-container .title {
+    color: #ffffff;
+    font-weight: 20px;
+    font-size: 16px;
+    background-color: #80322B;
+    padding: 5px; /* Sesuaikan padding untuk menyesuaikan ukuran latar belakang */
+    text-align: center; /* Agar kalimat berada di tengah */
+    border-radius: 0px;
+    display: inline-block; /* Sesuaikan radius sudut tumpul */
+    margin-top: 30px;
+    margin-left: 85px;
     position: relative; /* Tambahkan property position untuk menggunakan pseudo-element */
     justify-items: center;
     justify-content: center;
@@ -647,7 +695,7 @@ content: "/";
     border-radius: 0px;
     display: inline-block; /* Sesuaikan radius sudut tumpul */
     margin-top: 40px;
-    margin-left: 80px;
+    margin-left: 85px;
     position: relative; /* Tambahkan property position untuk menggunakan pseudo-element */
   }
   
@@ -704,6 +752,7 @@ content: "/";
 }
 
 #web p {
+  font-family: 'raleway', sans-serif;
   color: #80322B; /* Sesuaikan warna teks */
   font-size: 16px; /* Sesuaikan ukuran font */
   line-height: 26px;

@@ -983,6 +983,7 @@ section {
       display: flex;
       justify-content: center; /* Mengatur gambar menjadi berada di tengah secara horizontal */
       align-items: center; /* Mengatur gambar menjadi berada di atas secara tengah */
+      margin-left: 15px;
     }
     
   }
@@ -1154,6 +1155,7 @@ section {
       margin-left: 90px; /* Sesuaikan nilai margin sesuai kebutuhan */
       /* margin-right: 70px; */
       margin-top: -50px;
+      margin-left: -15px;
       justify-content: center;
       justify-items: center;
       padding-right: 80px;
@@ -1164,6 +1166,7 @@ section {
       /* margin-left: 10px; Sesuaikan nilai margin sesuai kebutuhan */
       font-size: 14px;
       /* margin-bottom: 70px; */
+      margin-left: -15px;
       justify-content: center;
       justify-items: center;
       padding-right: 80px;
@@ -1182,7 +1185,7 @@ section {
       justify-content: center;
       justify-items: center;
       /* padding-right: 80px; */
-      margin-top: -65px;
+      margin-top: -50px;
     }
     
     #about .about-container .text-center .description {
