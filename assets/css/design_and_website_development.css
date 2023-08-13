@@ -615,7 +615,7 @@ content: "/";
     color: #ffffff;
     font-weight: 20px;
     font-size: 16px;
-    background-color: #80322B;
+    background-color: #CCA32D;
     padding: 5px; /* Sesuaikan padding untuk menyesuaikan ukuran latar belakang */
     text-align: center; /* Agar kalimat berada di tengah */
     border-radius: 0px;
@@ -652,7 +652,7 @@ content: "/";
     color: #ffffff;
     font-weight: 20px;
     font-size: 16px;
-    background-color: #80322B;
+    background-color: #CCA32D;
     padding: 5px; /* Sesuaikan padding untuk menyesuaikan ukuran latar belakang */
     text-align: center; /* Agar kalimat berada di tengah */
     border-radius: 0px;
@@ -672,7 +672,7 @@ content: "/";
     right: 0;
     bottom: 0;
     z-index: -1;
-    background: #80322B; /* Set background color sesuai dengan warna title */
+    background: #CCA32D; /* Set background color sesuai dengan warna title */
     border-radius: 10px;
   }
   #design-and-website-development .design-and-website-development-container h4{
@@ -689,7 +689,7 @@ content: "/";
     color: #ffffff;
     font-weight: 20px;
     font-size: 14px;
-    background-color: #80322B;
+    background-color: #CCA32D;
     padding: 5px; /* Sesuaikan padding untuk menyesuaikan ukuran latar belakang */
     text-align: center; /* Agar kalimat berada di tengah */
     border-radius: 0px;
@@ -707,7 +707,7 @@ content: "/";
     right: 0;
     bottom: 0;
     z-index: -1;
-    background: #80322B; /* Set background color sesuai dengan warna title */
+    background: #CCA32D; /* Set background color sesuai dengan warna title */
     border-radius: 10px;
   }
   #design-and-website-development .design-and-website-development-container h4{
@@ -733,7 +733,7 @@ content: "/";
   margin-bottom: 0;
 }
 
-/* Styling untuk sosmedd */
+/* Styling untuk web */
 #web {
   background: #ffffff;
   padding: 50px 0; /* Sesuaikan padding di sini */

@@ -535,26 +535,41 @@ section {
   
   /* Video Advertising
 --------------------------------*/
+
   #video-advertising {
-    background: #fff;
-    padding: 80px 0;
-  }
-  #video-advertising h4{
-    padding: 0px;
-    font-weight: 0px;
-    line-height: 25px;
+    background: #ffffff;
   }
   
   #video-advertising .video-advertising-container .background {
-    min-height: 500px;
+    min-height: auto; /* Menghapus min-height agar background menyesuaikan tinggi konten */
     background: url(../img/kiks/vid.png) top no-repeat;
-    margin-top: 50px;
+    margin-top: 100px;
     margin-bottom: 10px;
     margin-left: 95px;
   }
+
+  @media (max-width: 1024px) {
+    #video-advertising .video-advertising-container .background {
+      min-height: 500px; /* Menghapus min-height agar background menyesuaikan tinggi konten */
+      background: url(../img/kiks/vid.png) top no-repeat;
+      margin-top: 100px;
+      margin-bottom: -300px;
+      margin-left: 80px;
+    }
+  }
+  @media (max-width: 830px) {
+    #video-advertising .video-advertising-container .background {
+      min-height: 500px; /* Menghapus min-height agar background menyesuaikan tinggi konten */
+      background: url(../img/kiks/vid.png) top no-repeat;
+      margin-top: 100px;
+      margin-bottom: -300px;
+      margin-left: 10px;
+    }
+  }
   
   #video-advertising .video-advertising-container .content {
-    background: #fff;
+    background: #ffffff;
+    padding: 20px; /* Sesuaikan padding untuk menyesuaikan ukuran latar belakang */
   }
   
   #video-advertising .video-advertising-container .title {
@@ -566,8 +581,10 @@ section {
     text-align: center; /* Agar kalimat berada di tengah */
     border-radius: 0px;
     display: inline-block; /* Sesuaikan radius sudut tumpul */
+    margin-top: 80px;
+    position: relative; /* Tambahkan property position untuk menggunakan pseudo-element */
   }
-
+  
   #video-advertising .video-advertising-container .title::before {
     content: "";
     position: absolute;
@@ -576,9 +593,154 @@ section {
     right: 0;
     bottom: 0;
     z-index: -1;
+    background: #425A40;; /* Set background color sesuai dengan warna title */
     border-radius: 10px;
   }
-  
+
+  @media (max-width: 500px) {
+    #video-advertising .video-advertising-container .title {
+      color: #ffffff;
+      font-weight: 20px;
+      font-size: 16px;
+      background-color: #425A40;
+      padding: 5px; /* Sesuaikan padding untuk menyesuaikan ukuran latar belakang */
+      text-align: center; /* Agar kalimat berada di tengah */
+      border-radius: 0px;
+      display: inline-block; /* Sesuaikan radius sudut tumpul */
+      margin-top: 30px;
+      margin-left: 115px;
+      position: relative; /* Tambahkan property position untuk menggunakan pseudo-element */
+      justify-items: center;
+      justify-content: center;
+    }
+    
+    #video-advertising .video-advertising-container .title::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      background: #425A40; /* Set background color sesuai dengan warna title */
+      border-radius: 10px;
+    }
+    #video-advertising .video-advertising-container h4{
+      text-align: center;
+    }
+    #video-advertising .video-advertising-container p{
+      text-align: center;
+    }
+    
+  }
+
+  @media (max-width: 400px) {
+    #video-advertising .video-advertising-container .title {
+      color: #ffffff;
+      font-weight: 20px;
+      font-size: 16px;
+      background-color: #425A40;
+      padding: 5px; /* Sesuaikan padding untuk menyesuaikan ukuran latar belakang */
+      text-align: center; /* Agar kalimat berada di tengah */
+      border-radius: 0px;
+      display: inline-block; /* Sesuaikan radius sudut tumpul */
+      margin-top: 30px;
+      margin-left: 105px;
+      position: relative; /* Tambahkan property position untuk menggunakan pseudo-element */
+      justify-items: center;
+      justify-content: center;
+    }
+    
+    #video-advertising .video-advertising-container .title::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      background: #425A40; /* Set background color sesuai dengan warna title */
+      border-radius: 10px;
+    }
+    #video-advertising .video-advertising-container h4{
+      text-align: center;
+    }
+    #video-advertising .video-advertising-container p{
+      text-align: center;
+    }
+    
+  }
+
+  @media (max-width: 380px) {
+    #video-advertising .video-advertising-container .title {
+      color: #ffffff;
+      font-weight: 20px;
+      font-size: 14px;
+      background-color: #425A40;
+      padding: 5px; /* Sesuaikan padding untuk menyesuaikan ukuran latar belakang */
+      text-align: center; /* Agar kalimat berada di tengah */
+      border-radius: 0px;
+      display: inline-block; /* Sesuaikan radius sudut tumpul */
+      margin-top: 40px;
+      margin-left: 105px;
+      position: relative; /* Tambahkan property position untuk menggunakan pseudo-element */
+    }
+    
+    #video-advertising .video-advertising-container .title::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      background: #425A40; /* Set background color sesuai dengan warna title */
+      border-radius: 10px;
+    }
+    #video-advertising .video-advertising-container h4{
+      text-align: center;
+    }
+    #video-advertising .video-advertising-container p{
+      text-align: center;
+    }
+    
+  }
+
+  @media (max-width: 360px) {
+    #video-advertising .video-advertising-container .title {
+      color: #ffffff;
+      font-weight: 20px;
+      font-size: 14px;
+      background-color: #425A40;
+      padding: 5px; /* Sesuaikan padding untuk menyesuaikan ukuran latar belakang */
+      text-align: center; /* Agar kalimat berada di tengah */
+      border-radius: 0px;
+      display: inline-block; /* Sesuaikan radius sudut tumpul */
+      margin-top: 40px;
+      margin-left: 95px;
+      position: relative; /* Tambahkan property position untuk menggunakan pseudo-element */
+    }
+    
+    #video-advertising .video-advertising-container .title::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      background: #425A40; /* Set background color sesuai dengan warna title */
+      border-radius: 10px;
+    }
+    #video-advertising .video-advertising-container h4{
+      text-align: center;
+    }
+    #video-advertising .video-advertising-container p{
+      text-align: center;
+    }
+    
+  }
+
   @media (max-width: 768px) {
     #video-advertising .video-advertising-container .title {
       padding-top: 10px;
@@ -592,6 +754,7 @@ section {
   #video-advertising .video-advertising-container p:last-child {
     margin-bottom: 0;
   }
+  
   
   /* Gaya logo WhatsApp */
   .whatsapp-logo {
