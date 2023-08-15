@@ -1333,14 +1333,15 @@ section {
 }
 
 #services .icon img {
-  width: 80px; /* Sesuaikan ukuran gambar sesuai kebutuhan */
-  height: 100px; /* Sesuaikan ukuran gambar sesuai kebutuhan */
+  margin-top: 110px;
+  width: 90px; /* Sesuaikan ukuran gambar sesuai kebutuhan */
+  height: 110px; /* Sesuaikan ukuran gambar sesuai kebutuhan */
 }
 
-#services .box:hover .icon {
-  /* background: #fff; */
-  /* border: 2px solid #3fe2ff; */
-}
+/* #services .box:hover .icon {
+  background: #fff;
+  border: 2px solid #3fe2ff;
+} */
 
 #services .box:hover .icon img {
   filter: invert(38%) sepia(82%) saturate(5707%) hue-rotate(182deg) brightness(87%) contrast(92%); /* Efek hover gambar */
@@ -1353,6 +1354,7 @@ section {
 #services .title {
   font-weight: 700;
   font-size: 18px;
+  margin-top: 60px;
   margin-bottom: 15px;
   text-transform: uppercase;
 }
