@@ -1306,7 +1306,7 @@ section {
   margin-bottom: 50px;
   text-align: center;
   border: 1px solid #e6e6e6;
-  height: 200px;
+  height: 250px;
   position: relative;
   background: #fafafa;
 }
@@ -1333,9 +1333,9 @@ section {
 }
 
 #services .icon img {
-  margin-top: 110px;
-  width: 90px; /* Sesuaikan ukuran gambar sesuai kebutuhan */
-  height: 110px; /* Sesuaikan ukuran gambar sesuai kebutuhan */
+  margin-top: 130px;
+  width: 120px; /* Sesuaikan ukuran gambar sesuai kebutuhan */
+  height: 150px; /* Sesuaikan ukuran gambar sesuai kebutuhan */
 }
 
 /* #services .box:hover .icon {
@@ -1354,7 +1354,7 @@ section {
 #services .title {
   font-weight: 700;
   font-size: 18px;
-  margin-top: 60px;
+  margin-top: 80px;
   margin-bottom: 15px;
   text-transform: uppercase;
 }
