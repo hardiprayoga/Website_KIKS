@@ -729,7 +729,7 @@ section {
       right: 0;
       bottom: 0;
       z-index: -1;
-      background: #425A40; /* Set background color sesuai dengan warna title */
+      background: #425A40; /* Set background color sesuai warna title */
       border-radius: 10px;
     }
     #video-advertising .video-advertising-container h4{
