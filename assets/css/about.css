@@ -558,7 +558,35 @@ section {
   justify-content: center; /* Mengatur gambar menjadi berada di tengah secara horizontal */
   align-items: center; /* Mengatur gambar menjadi berada di atas secara tengah */
   margin-top: -80px;
-  margin-left: 30px; 
+  margin-left: 20px; 
+}
+
+@media (max-width: 420px){
+  #about .about-container .background {
+    height: 500px;
+    background: url(../img/logooo.png) center ;
+    background-size: contain; /* Mengatur gambar agar berada di atas tengah dan sesuai proporsi */
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center; /* Mengatur gambar menjadi berada di tengah secara horizontal */
+    align-items: center; /* Mengatur gambar menjadi berada di atas secara tengah */
+    margin-top: -80px;
+    margin-left: 15px; 
+  }
+  }
+
+@media (max-width: 375px){
+#about .about-container .background {
+  height: 500px;
+  background: url(../img/logooo.png) center ;
+  background-size: contain; /* Mengatur gambar agar berada di atas tengah dan sesuai proporsi */
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center; /* Mengatur gambar menjadi berada di tengah secara horizontal */
+  align-items: center; /* Mengatur gambar menjadi berada di atas secara tengah */
+  margin-top: -80px;
+  margin-left: 8px; 
+}
 }
 
   
@@ -869,7 +897,7 @@ section {
     }
   }
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 420px) {
     #about .about-container .text-center .title {
       font-family: 'raleway', sans-serif;
       font-size: 20px;
@@ -881,7 +909,7 @@ section {
       margin-top: -120px;
       justify-content: center;
       justify-items: center;
-      padding-right: 80px;
+      padding-right: 110px;
     }
     
     #about .about-container .text-center .description {
@@ -891,7 +919,7 @@ section {
       /* margin-bottom: 70px; */
       justify-content: center;
       justify-items: center;
-      padding-right: 80px;
+      padding-right: 110px;
     }
   }
 
@@ -907,7 +935,8 @@ section {
       justify-content: center;
       justify-items: center;
       /* padding-right: 80px; */
-      margin-top: -110px;
+      margin-top: -130px;
+      margin-right: 10px;
     }
     
     #about .about-container .text-center .description {
@@ -919,6 +948,7 @@ section {
       justify-content: center;
       justify-items: center;
       /* padding-right: 80px; */
+      margin-right: 10px;
     }
     
   
@@ -995,83 +1025,6 @@ section {
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
     margin-right: 70px;
   }
-
-  
-
-/* Services
---------------------------------*/
-#services {
-    background: #fff;
-    background-size: cover;
-    padding: 80px 0 60px 0;
-  }
-  
-  #services .box {
-    padding: 50px 20px;
-    margin-bottom: 50px;
-    text-align: center;
-    border: 1px solid #e6e6e6;
-    height: 200px;
-    position: relative;
-    background: #fafafa;
-  }
-  
-  #services .icon {
-    position: absolute;
-    top: -36px;
-    left: calc(50% - 36px);
-    transition: 0.2s;
-    border-radius: 50%;
-    border: 6px solid #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    width: 72px;
-    height: 72px;
-    background: #2dc997;
-  }
-  
-  #services .icon a {
-    display: inline-block;
-  }
-  
-  #services .icon i {
-    color: #fff;
-    font-size: 24px;
-    line-height: 0;
-  }
-  
-  #services .box:hover .icon {
-    background: #fff;
-    border: 2px solid #2dc997;
-  }
-  
-  #services .box:hover .icon i {
-    color: #2dc997;
-  }
-  
-  #services .box:hover .icon a {
-    color: #2dc997;
-  }
-  
-  #services .title {
-    font-weight: 700;
-    font-size: 18px;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-  }
-  
-  #services .title a {
-    color: #111;
-  }
-  
-  #services .description {
-    font-size: 14px;
-    line-height: 24px;
-  }
-  
  /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -1177,7 +1130,53 @@ section {
 @media (max-width: 500px){
   #footer .footer-contact {
     margin-left: -200px;
+    margin-right: 90px;
+    margin-top: 100px;
+    justify-content: center;
+    justify-items: center;
+    text-justify: auto;
+    font-size: 12px;
+    text-align: center;
+  }
+  #footer .footer-contact h3{
+    font-size: 14px;
+  }
+}
+@media (max-width: 420px){
+  #footer .footer-contact {
+    margin-left: -200px;
+    margin-right: 115px;
+    margin-top: 100px;
+    justify-content: center;
+    justify-items: center;
+    text-justify: auto;
+    font-size: 12px;
+    text-align: center;
+  }
+  #footer .footer-contact h3{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 390px){
+  #footer .footer-contact {
+    margin-left: -200px;
     margin-right: 100px;
+    margin-top: 100px;
+    justify-content: center;
+    justify-items: center;
+    text-justify: auto;
+    font-size: 12px;
+    text-align: center;
+  }
+  #footer .footer-contact h3{
+    font-size: 14px;
+  }
+}
+@media (max-width: 375px){
+  #footer .footer-contact {
+    margin-left: -200px;
+    margin-right: 85px;
     margin-top: 100px;
     justify-content: center;
     justify-items: center;
